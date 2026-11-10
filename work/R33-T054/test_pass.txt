@@ -1,0 +1,19 @@
+test_schema_and_size (test_smoke.TestFixture.test_schema_and_size) ... ok
+test_splits_disjoint_by_group (test_smoke.TestFixture.test_splits_disjoint_by_group) ... ok
+test_unique_ids_and_labels (test_smoke.TestFixture.test_unique_ids_and_labels) ... ok
+test_deterministic_with_fixed_seed (test_smoke.TestSmokeRun.test_deterministic_with_fixed_seed) ... ok
+test_empty_rejected (test_smoke.TestSmokeRun.test_empty_rejected) ... ok
+test_loss_is_finite (test_smoke.TestSmokeRun.test_loss_is_finite) ... ok
+test_prediction_shape (test_smoke.TestSmokeRun.test_prediction_shape) ... ok
+test_recorded_step_count (test_smoke.TestSmokeRun.test_recorded_step_count) ... ok
+test_scalar_loss_clamps_extremes (test_smoke.TestSmokeRun.test_scalar_loss_clamps_extremes) ... ok
+test_scalar_loss_is_scalar (test_smoke.TestSmokeRun.test_scalar_loss_is_scalar) ... ok
+test_tf_scalar_shape (test_smoke.TestSmokeRun.test_tf_scalar_shape) ... skipped 'tensorflow not installed'
+test_too_many_samples_rejected (test_smoke.TestSmokeRun.test_too_many_samples_rejected) ... ok
+test_too_many_steps_rejected (test_smoke.TestSmokeRun.test_too_many_steps_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK (skipped=1)
+exit code: 0
