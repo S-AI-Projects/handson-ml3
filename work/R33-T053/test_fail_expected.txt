@@ -1,0 +1,15 @@
+........F...
+======================================================================
+FAIL: test_precision_recall_binary (test_metrics.TestMetrics.test_precision_recall_binary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/t053_fail/test_metrics.py", line 10, in test_precision_recall_binary
+    self.assertEqual(precision(self.truth, self.pred), 0.9)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.5 != 0.9
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+FAILED (failures=1)
+exit code: 1
