@@ -1,0 +1,15 @@
+.......F..s..
+======================================================================
+FAIL: test_recorded_step_count (test_smoke.TestSmokeRun.test_recorded_step_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/t054_fail/test_smoke.py", line 15, in test_recorded_step_count
+    self.assertEqual(self.result["steps"], EXPECTED_STEPS)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 20 != 21
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+FAILED (failures=1, skipped=1)
+exit code: 1

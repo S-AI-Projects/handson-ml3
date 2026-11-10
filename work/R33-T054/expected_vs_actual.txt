@@ -1,0 +1,5 @@
+inputs: 2 train records (g1), seed=0, steps=20, lr=0.5
+steps          expected=20 actual= 20
+loss[0]        finite, actual= 0.6732
+loss[-1]       finite, actual= 0.1984
+prediction len expected=2 actual= 2
