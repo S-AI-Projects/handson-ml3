@@ -1,0 +1,15 @@
+..............F.......
+======================================================================
+FAIL: test_saved_file_seed (test_config.TestConfig.test_saved_file_seed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/t057_fail/test_config.py", line 141, in test_saved_file_seed
+    self.assertEqual(json.load(f)["seed"], EXPECTED_SEED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.019s
+
+FAILED (failures=1)
+exit code: 1
