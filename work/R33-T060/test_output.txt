@@ -1,0 +1,63 @@
+== normal run ==
+test_fixture_and_split_separation (test_preprocess.FixtureContract.test_fixture_and_split_separation) ... ok
+test_invalid_dimensions_rejected (test_preprocess.InvalidInputs.test_invalid_dimensions_rejected) ... ok
+test_non_integer_pixels_rejected (test_preprocess.InvalidInputs.test_non_integer_pixels_rejected) ... ok
+test_out_of_range_pixels_rejected (test_preprocess.InvalidInputs.test_out_of_range_pixels_rejected) ... ok
+test_contamination_fixture_rejected (test_preprocess.LeakageControl.test_contamination_fixture_rejected) ... ok
+test_heldout_transform_does_not_change_fitted_state (test_preprocess.LeakageControl.test_heldout_transform_does_not_change_fitted_state) ... ok
+test_mixed_train_and_test_rejected_and_state_untouched (test_preprocess.LeakageControl.test_mixed_train_and_test_rejected_and_state_untouched) ... ok
+test_public_interface_has_no_fit_on_transform (test_preprocess.LeakageControl.test_public_interface_has_no_fit_on_transform) ... ok
+test_refit_with_contamination_keeps_previous_state (test_preprocess.LeakageControl.test_refit_with_contamination_keeps_previous_state) ... ok
+test_transform_before_fit_rejected (test_preprocess.LeakageControl.test_transform_before_fit_rejected) ... ok
+test_diagonal_image_values_dtype_shape (test_preprocess.OutputValues.test_diagonal_image_values_dtype_shape) ... ok
+test_explicit_channel_axis_in_nested_output (test_preprocess.OutputValues.test_explicit_channel_axis_in_nested_output) ... ok
+test_range_is_zero_to_one_and_midvalue (test_preprocess.OutputValues.test_range_is_zero_to_one_and_midvalue) ... ok
+test_zero_image_all_zero (test_preprocess.OutputValues.test_zero_image_all_zero) ... ok
+test_rest_request_body_offline (test_preprocess.ServingPayload.test_rest_request_body_offline) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.000s
+
+OK
+
+== mutated expectation (must fail) ==
+test_fixture_and_split_separation (test_preprocess.FixtureContract.test_fixture_and_split_separation) ... ok
+test_invalid_dimensions_rejected (test_preprocess.InvalidInputs.test_invalid_dimensions_rejected) ... ok
+test_non_integer_pixels_rejected (test_preprocess.InvalidInputs.test_non_integer_pixels_rejected) ... ok
+test_out_of_range_pixels_rejected (test_preprocess.InvalidInputs.test_out_of_range_pixels_rejected) ... ok
+test_contamination_fixture_rejected (test_preprocess.LeakageControl.test_contamination_fixture_rejected) ... ok
+test_heldout_transform_does_not_change_fitted_state (test_preprocess.LeakageControl.test_heldout_transform_does_not_change_fitted_state) ... ok
+test_mixed_train_and_test_rejected_and_state_untouched (test_preprocess.LeakageControl.test_mixed_train_and_test_rejected_and_state_untouched) ... ok
+test_public_interface_has_no_fit_on_transform (test_preprocess.LeakageControl.test_public_interface_has_no_fit_on_transform) ... ok
+test_refit_with_contamination_keeps_previous_state (test_preprocess.LeakageControl.test_refit_with_contamination_keeps_previous_state) ... ok
+test_transform_before_fit_rejected (test_preprocess.LeakageControl.test_transform_before_fit_rejected) ... ok
+test_diagonal_image_values_dtype_shape (test_preprocess.OutputValues.test_diagonal_image_values_dtype_shape) ... FAIL
+test_explicit_channel_axis_in_nested_output (test_preprocess.OutputValues.test_explicit_channel_axis_in_nested_output) ... ok
+test_range_is_zero_to_one_and_midvalue (test_preprocess.OutputValues.test_range_is_zero_to_one_and_midvalue) ... ok
+test_zero_image_all_zero (test_preprocess.OutputValues.test_zero_image_all_zero) ... ok
+test_rest_request_body_offline (test_preprocess.ServingPayload.test_rest_request_body_offline) ... ok
+
+======================================================================
+FAIL: test_diagonal_image_values_dtype_shape (test_preprocess.OutputValues.test_diagonal_image_values_dtype_shape)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sarveshchavan/Desktop/handson-ml3-sarvesh/course-labs/r33-t060/test_preprocess.py", line 39, in test_diagonal_image_values_dtype_shape
+    self.assertEqual(out.flat, EXPECTED_DIAG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0] != [0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5]
+
+First differing element 0:
+1.0
+0.5
+
+- [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+?  ^ ^                      ^ ^                      ^ ^                      ^ ^
+
++ [0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5]
+?  ^ ^                      ^ ^                      ^ ^                      ^ ^
+
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+FAILED (failures=1)
