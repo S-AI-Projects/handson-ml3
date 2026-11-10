@@ -1,0 +1,18 @@
+test_accuracy_perfect_and_zero (test_baseline.TestBaseline.test_accuracy_perfect_and_zero) ... ok
+test_bad_inputs (test_baseline.TestBaseline.test_bad_inputs) ... ok
+test_baseline_uses_only_training_data (test_baseline.TestBaseline.test_baseline_uses_only_training_data) ... ok
+test_fit_on_train_split (test_baseline.TestBaseline.test_fit_on_train_split) ... ok
+test_heldout_accuracy (test_baseline.TestBaseline.test_heldout_accuracy) ... ok
+test_majority_clear_winner (test_baseline.TestBaseline.test_majority_clear_winner) ... ok
+test_majority_tie_goes_to_smallest_label (test_baseline.TestBaseline.test_majority_tie_goes_to_smallest_label) ... ok
+test_val_accuracy_and_prediction_count (test_baseline.TestBaseline.test_val_accuracy_and_prediction_count) ... ok
+test_schema_and_values (test_baseline.TestFixture.test_schema_and_values) ... ok
+test_split_is_stratified (test_baseline.TestFixture.test_split_is_stratified) ... ok
+test_splits_disjoint_and_complete (test_baseline.TestFixture.test_splits_disjoint_and_complete) ... ok
+test_unique_ids (test_baseline.TestFixture.test_unique_ids) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.000s
+
+OK
+exit code: 0

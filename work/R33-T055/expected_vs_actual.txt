@@ -1,0 +1,4 @@
+inputs: train labels [0, 0, 1, 1] val labels [0, 1] test labels [0, 1]
+majority class (tie -> smallest) expected=0 actual= 0
+val accuracy   expected=0.5 actual= 0.5
+test accuracy  expected=0.5 actual= 0.5
