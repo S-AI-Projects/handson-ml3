@@ -1,0 +1,18 @@
+test_pipeline_end_to_end (test_metrics.TestFixture.test_pipeline_end_to_end) ... ok
+test_schema_and_size (test_metrics.TestFixture.test_schema_and_size) ... ok
+test_splits_disjoint_by_group (test_metrics.TestFixture.test_splits_disjoint_by_group) ... ok
+test_unique_ids_and_labels (test_metrics.TestFixture.test_unique_ids_and_labels) ... ok
+test_bad_inputs (test_metrics.TestMetrics.test_bad_inputs) ... ok
+test_leaky_relu (test_metrics.TestMetrics.test_leaky_relu) ... ok
+test_macro_micro (test_metrics.TestMetrics.test_macro_micro) ... ok
+test_mae (test_metrics.TestMetrics.test_mae) ... ok
+test_precision_recall_binary (test_metrics.TestMetrics.test_precision_recall_binary) ... ok
+test_zero_denominator_precision (test_metrics.TestMetrics.test_zero_denominator_precision) ... ok
+test_zero_denominator_recall (test_metrics.TestMetrics.test_zero_denominator_recall) ... ok
+test_zero_division_override (test_metrics.TestMetrics.test_zero_division_override) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.000s
+
+OK
+exit code: 0
