@@ -1,0 +1,8 @@
+record_id split    expected  predicted    error  reason
+r1        train        1.00       1.00     0.00  correct
+r2        train        3.00       3.00     0.00  correct
+r3        train        5.00       5.00     0.00  correct
+r4        train        7.00       7.00     0.00  correct
+r5        val          9.00       9.00     0.00  correct
+r6        test        11.00       9.00    -2.00  injected_error
+total=6 correct=5 errors=1 mae=0.3333 error_ids=['r6']

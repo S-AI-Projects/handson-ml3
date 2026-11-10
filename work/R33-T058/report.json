@@ -1,0 +1,87 @@
+{
+  "rows": [
+    {
+      "record_id": "r1",
+      "split": "train",
+      "expected": 1.0,
+      "predicted": 1.0,
+      "error": 0.0,
+      "abs_error": 0.0,
+      "reason_category": "correct"
+    },
+    {
+      "record_id": "r2",
+      "split": "train",
+      "expected": 3.0,
+      "predicted": 3.0,
+      "error": 0.0,
+      "abs_error": 0.0,
+      "reason_category": "correct"
+    },
+    {
+      "record_id": "r3",
+      "split": "train",
+      "expected": 5.0,
+      "predicted": 5.0,
+      "error": 0.0,
+      "abs_error": 0.0,
+      "reason_category": "correct"
+    },
+    {
+      "record_id": "r4",
+      "split": "train",
+      "expected": 7.0,
+      "predicted": 7.0,
+      "error": 0.0,
+      "abs_error": 0.0,
+      "reason_category": "correct"
+    },
+    {
+      "record_id": "r5",
+      "split": "val",
+      "expected": 9.0,
+      "predicted": 9.0,
+      "error": 0.0,
+      "abs_error": 0.0,
+      "reason_category": "correct"
+    },
+    {
+      "record_id": "r6",
+      "split": "test",
+      "expected": 11.0,
+      "predicted": 9.0,
+      "error": -2.0,
+      "abs_error": 2.0,
+      "reason_category": "injected_error"
+    }
+  ],
+  "summary": {
+    "n_total": 6,
+    "n_correct": 5,
+    "n_errors": 1,
+    "mae": 0.3333333333333333,
+    "by_split": {
+      "train": {
+        "n": 4,
+        "n_errors": 0
+      },
+      "val": {
+        "n": 1,
+        "n_errors": 0
+      },
+      "test": {
+        "n": 1,
+        "n_errors": 1
+      }
+    },
+    "by_reason": {
+      "correct": 5,
+      "over_prediction": 0,
+      "under_prediction": 0,
+      "injected_error": 1
+    },
+    "error_record_ids": [
+      "r6"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+........F....
+======================================================================
+FAIL: test_injected_wrong_prediction_reported_with_correct_id (test_report.TestReport.test_injected_wrong_prediction_reported_with_correct_id)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/t058_fail/test_report.py", line 49, in test_injected_wrong_prediction_reported_with_correct_id
+    self.assertEqual(rep["summary"]["error_record_ids"], [EXPECTED_ERROR_ID])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['r6'] != ['r5']
+
+First differing element 0:
+'r6'
+'r5'
+
+- ['r6']
+?    ^
+
++ ['r5']
+?    ^
+
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+FAILED (failures=1)
+exit code: 1
