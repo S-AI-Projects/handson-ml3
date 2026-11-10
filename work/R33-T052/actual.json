@@ -1,0 +1,27 @@
+{
+  "assignments": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "manifest_splits": {
+    "train": [
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "validation": [
+      "p6"
+    ],
+    "test": [
+      "p1"
+    ]
+  },
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0
+}

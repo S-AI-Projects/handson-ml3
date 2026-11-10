@@ -1,0 +1,18 @@
+{
+  "seed": 0,
+  "splits": {
+    "test": [
+      "p1"
+    ],
+    "train": [
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "validation": [
+      "p6"
+    ]
+  },
+  "strategy": "seeded-hash"
+}
