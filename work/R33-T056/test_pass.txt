@@ -1,0 +1,24 @@
+test_schema_and_size (test_pipeline.TestFixture.test_schema_and_size) ... ok
+test_splits_disjoint_by_group (test_pipeline.TestFixture.test_splits_disjoint_by_group) ... ok
+test_unique_ids_and_labels (test_pipeline.TestFixture.test_unique_ids_and_labels) ... ok
+test_before_after_predictions_agree_within_tolerance (test_pipeline.TestSavedPipeline.test_before_after_predictions_agree_within_tolerance) ... ok
+test_fit_is_deterministic (test_pipeline.TestSavedPipeline.test_fit_is_deterministic) ... ok
+test_heldout_labels_match (test_pipeline.TestSavedPipeline.test_heldout_labels_match) ... ok
+test_inference_needs_no_training_data (test_pipeline.TestSavedPipeline.test_inference_needs_no_training_data) ... ok
+test_invalid_json_fails (test_pipeline.TestSavedPipeline.test_invalid_json_fails) ... ok
+test_missing_key_fails_clearly (test_pipeline.TestSavedPipeline.test_missing_key_fails_clearly) ... ok
+test_model_type_mismatch_fails_clearly (test_pipeline.TestSavedPipeline.test_model_type_mismatch_fails_clearly) ... ok
+test_module_does_not_use_pickle (test_pipeline.TestSavedPipeline.test_module_does_not_use_pickle) ... ok
+test_non_finite_value_fails (test_pipeline.TestSavedPipeline.test_non_finite_value_fails) ... ok
+test_pickle_file_is_rejected_not_loaded (test_pipeline.TestSavedPipeline.test_pickle_file_is_rejected_not_loaded) ... ok
+test_predict_rejects_bad_shape (test_pipeline.TestSavedPipeline.test_predict_rejects_bad_shape) ... ok
+test_predict_rejects_out_of_range_pixel (test_pipeline.TestSavedPipeline.test_predict_rejects_out_of_range_pixel) ... ok
+test_saved_file_schema_version (test_pipeline.TestSavedPipeline.test_saved_file_schema_version) ... ok
+test_version_mismatch_fails_clearly (test_pipeline.TestSavedPipeline.test_version_mismatch_fails_clearly) ... ok
+test_wrong_centroid_length_fails (test_pipeline.TestSavedPipeline.test_wrong_centroid_length_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.008s
+
+OK
+exit code: 0

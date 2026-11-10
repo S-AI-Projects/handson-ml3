@@ -1,0 +1,15 @@
+...............F..
+======================================================================
+FAIL: test_saved_file_schema_version (test_pipeline.TestSavedPipeline.test_saved_file_schema_version)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/t056_fail/test_pipeline.py", line 55, in test_saved_file_schema_version
+    self.assertEqual(self._doc()["schema_version"], EXPECTED_SCHEMA_VERSION)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 2
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.008s
+
+FAILED (failures=1)
+exit code: 1
