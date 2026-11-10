@@ -1,0 +1,4 @@
+inputs: 6 synthetic records, model fitted on train split g1, tolerance = 1e-09
+labels identical before/after reload expected=True actual= True
+max |score diff| expected<=1e-09 actual= 0.0
+version mismatch expected=PipelineSchemaError actual=PipelineSchemaError: unsupported schema_version 99; expected 1
