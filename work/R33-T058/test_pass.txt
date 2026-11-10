@@ -1,0 +1,19 @@
+test_formula_and_schema (test_report.TestFixture.test_formula_and_schema) ... ok
+test_splits_explicit_and_disjoint (test_report.TestFixture.test_splits_explicit_and_disjoint) ... ok
+test_aggregates_match_detail_rows (test_report.TestReport.test_aggregates_match_detail_rows) ... ok
+test_classify_reason_categories (test_report.TestReport.test_classify_reason_categories) ... ok
+test_clean_run_has_no_errors (test_report.TestReport.test_clean_run_has_no_errors) ... ok
+test_correct_predictions_not_in_error_list (test_report.TestReport.test_correct_predictions_not_in_error_list) ... ok
+test_empty_train_rejected (test_report.TestReport.test_empty_train_rejected) ... ok
+test_fit_uses_training_data_only (test_report.TestReport.test_fit_uses_training_data_only) ... ok
+test_injected_wrong_prediction_reported_with_correct_id (test_report.TestReport.test_injected_wrong_prediction_reported_with_correct_id) ... ok
+test_non_finite_injected_value_rejected (test_report.TestReport.test_non_finite_injected_value_rejected) ... ok
+test_render_text_mentions_error_record (test_report.TestReport.test_render_text_mentions_error_record) ... ok
+test_report_json_roundtrip (test_report.TestReport.test_report_json_roundtrip) ... ok
+test_unknown_injected_id_rejected (test_report.TestReport.test_unknown_injected_id_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.000s
+
+OK
+exit code: 0

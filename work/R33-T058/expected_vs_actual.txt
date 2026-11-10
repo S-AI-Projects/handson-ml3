@@ -1,0 +1,8 @@
+inputs: 6 synthetic rows, target = 2*x1 + 1, injected prediction r6 = 9.0
+fitted model   expected slope=2.0 intercept=1.0 actual= {'slope': 2.0, 'intercept': 1.0}
+error ids      expected=['r6'] actual= ['r6']
+r6 expected    expected=11.0 actual= 11.0
+r6 predicted   expected=9.0 actual= 9.0
+r6 reason      expected=injected_error actual= injected_error
+n_total/correct/errors expected=6/5/1 actual= 6 5 1
+mae            expected=0.3333 actual= 0.3333
