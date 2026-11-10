@@ -1,0 +1,44 @@
+{
+  "algorithm": {
+    "name": "nearest_centroid",
+    "pixel_max": 255
+  },
+  "feature_order": [
+    "p00",
+    "p01",
+    "p02",
+    "p03",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p20",
+    "p21",
+    "p22",
+    "p23",
+    "p30",
+    "p31",
+    "p32",
+    "p33"
+  ],
+  "input_shape": [
+    4,
+    4
+  ],
+  "schema_version": 1,
+  "seed": 0,
+  "split_ids": {
+    "test": [
+      "r2",
+      "r3"
+    ],
+    "train": [
+      "r0",
+      "r1"
+    ],
+    "val": [
+      "r4",
+      "r5"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+inputs: 6 synthetic records, seed=0
+config reloaded equals original  expected=True actual= True
+same split after reload          expected=True actual= True
+split ids: {'train': ['r0', 'r1'], 'val': ['r4', 'r5'], 'test': ['r2', 'r3']}
+identical predictions on reload  expected=True actual= True
+unknown field expected=ConfigError actual=ConfigError: unknown field(s): ['extra']
+bad shape expected=ConfigError actual=ConfigError: input must have shape [4, 4]
+environment: {'python': '3.15.2', 'implementation': 'CPython', 'platform': 'macOS-27.0.1-arm64-arm-64bit-Mach-O'}
