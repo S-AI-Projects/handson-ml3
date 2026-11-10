@@ -1,0 +1,15 @@
+....F.......
+======================================================================
+FAIL: test_heldout_accuracy (test_baseline.TestBaseline.test_heldout_accuracy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/t055_fail/test_baseline.py", line 26, in test_heldout_accuracy
+    self.assertEqual(accuracy(y, predict_majority(m, len(y))), EXPECTED_TEST_ACCURACY)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.5 != 0.9
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.000s
+
+FAILED (failures=1)
+exit code: 1
