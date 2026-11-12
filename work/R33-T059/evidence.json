@@ -1,0 +1,33 @@
+{
+  "seed": 59,
+  "tests_run": 11,
+  "inputs": [
+    "rec-00",
+    "rec-01",
+    "rec-02",
+    "rec-03",
+    "rec-04",
+    "rec-05"
+  ],
+  "shuffled_order": [
+    "rec-05",
+    "rec-02",
+    "rec-04",
+    "rec-03",
+    "rec-00",
+    "rec-01"
+  ],
+  "expected": {
+    "accuracy": 1.0,
+    "scored": 6
+  },
+  "actual": {
+    "accuracy": 1.0,
+    "scored": 6
+  },
+  "order_invariant": true,
+  "versions": {
+    "python": "3.15.2",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+  }
+}
