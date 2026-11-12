@@ -1,96 +1,121 @@
-"""Image-interface pipeline over compressed TFRecords with a robustness check.
+"""R33-T059: order-invariance of a compressed TFRecord image pipeline.
 
-Documented result (the data contract the test protects):
-  * per-record prediction keyed by record_id, from a fixed rule:
-    predict 1 if any pixel > 0 else 0
-  * overall accuracy against the stored labels
-  * per-class record counts
-
-Robustness property tested: record ORDER changes are irrelevant when records
-carry stable IDs - after aligning by record_id the result is identical.
-Time order is not applicable to this image fixture and is never randomised.
-
-Unsupported inputs (documented behaviour):
-  * missing field            -> rejected (SchemaError)
-  * shape mismatch           -> rejected (SchemaError)
-  * unseen category/label    -> mapped to FALLBACK_LABEL (-1), reported
-This is a narrow property check, not a claim of broad adversarial robustness.
+Synthetic CPU smoke fixture only (not the named real dataset). Stdlib only.
+Records are framed in the TFRecord layout (length, masked CRC32C, payload,
+masked CRC32C) and gzip-compressed. Payload is JSON, not tf.train.Example.
 """
+import gzip
+import json
 import random
+import struct
 
-from fixture import FALLBACK_LABEL, H, KNOWN_LABELS, SCHEMA, W
-from tfrecord_io import read_tfrecord_gz, write_tfrecord_gz
-
-
-class SchemaError(ValueError):
-    pass
-
-
-def to_example(rec):
-    return {
-        "record_id": rec["record_id"],
-        "group_id": rec["group_id"],
-        "pixels": list(rec["pixels"]),
-        "label": int(rec["label"]),
-    }
+SEED = 59
+SIDE = 4
+KNOWN_LABELS = (0, 1)
+FALLBACK_LABEL = -1
+REQUIRED = ("record_id", "group_id", "pixels", "label")
 
 
-def validate(raw):
-    """Return a clean record or raise SchemaError / map unseen label."""
-    missing = [f for f in SCHEMA if f not in raw]
-    if missing:
-        raise SchemaError("missing field(s): %s" % ", ".join(missing))
-    pixels = raw["pixels"]
-    if len(pixels) != H * W:
-        raise SchemaError(
-            "shape mismatch: expected %d pixels (%dx%d), got %d"
-            % (H * W, H, W, len(pixels))
-        )
-    if any(not 0 <= p <= 255 for p in pixels):
-        raise SchemaError("pixel value outside 0..255")
-    label_list = raw["label"]
-    label = label_list[0] if isinstance(label_list, list) else label_list
-    fallback = label not in KNOWN_LABELS
-    return {
-        "record_id": raw["record_id"].decode() if isinstance(raw["record_id"], bytes) else raw["record_id"],
-        "group_id": raw["group_id"].decode() if isinstance(raw["group_id"], bytes) else raw["group_id"],
-        "pixels": list(pixels),
-        "label": FALLBACK_LABEL if fallback else label,
-        "label_fallback": fallback,
-    }
+def make_fixture():
+    """Six 4x4 images: three all-zero (label 0), three white-diagonal (label 1)."""
+    records = []
+    for i in range(6):
+        label = i % 2
+        pixels = [[0] * SIDE for _ in range(SIDE)]
+        if label == 1:
+            for d in range(SIDE):
+                pixels[d][d] = 255
+        records.append({"record_id": f"rec-{i:02d}", "group_id": f"g{i // 2}",
+                        "pixels": pixels, "label": label})
+    return records
 
 
-def predict(pixels):
-    return 1 if any(p > 0 for p in pixels) else 0
+# ---- TFRecord codec (stdlib) ----
+def _crc_table():
+    table = []
+    for n in range(256):
+        c = n
+        for _ in range(8):
+            c = (c >> 1) ^ 0x82F63B78 if c & 1 else c >> 1
+        table.append(c)
+    return table
 
 
-def summarise(raw_records):
-    """Validate every record and compute the documented, order-free result."""
-    records = [validate(r) for r in raw_records]
-    ids = [r["record_id"] for r in records]
-    if len(set(ids)) != len(ids):
-        raise SchemaError("duplicate record_id")
-    by_id = {r["record_id"]: r for r in records}
-    preds = {i: predict(by_id[i]["pixels"]) for i in sorted(by_id)}
-    scored = [r for r in records if not r["label_fallback"]]
-    correct = sum(preds[r["record_id"]] == r["label"] for r in scored)
-    counts = {}
-    for r in records:
-        counts[r["label"]] = counts.get(r["label"], 0) + 1
-    return {
-        "predictions": preds,
-        "accuracy": correct / len(scored) if scored else None,
-        "class_counts": dict(sorted(counts.items())),
-        "fallback_ids": sorted(r["record_id"] for r in records if r["label_fallback"]),
-    }
+_TABLE = _crc_table()
 
 
-def roundtrip(path, records):
-    write_tfrecord_gz(path, [to_example(r) for r in records])
-    return read_tfrecord_gz(path)
+def crc32c(data):
+    c = 0xFFFFFFFF
+    for b in data:
+        c = _TABLE[(c ^ b) & 0xFF] ^ (c >> 8)
+    return c ^ 0xFFFFFFFF
 
 
-def shuffled(records, seed=0):
+def _masked(data):
+    c = crc32c(data)
+    return (((c >> 15) | (c << 17)) + 0xA282EAD8) & 0xFFFFFFFF
+
+
+def write_tfrecord_gz(path, records):
+    with gzip.open(path, "wb") as f:
+        for rec in records:
+            payload = json.dumps(rec, sort_keys=True).encode()
+            length = struct.pack("<Q", len(payload))
+            f.write(length + struct.pack("<I", _masked(length))
+                    + payload + struct.pack("<I", _masked(payload)))
+
+
+def read_tfrecord_gz(path):
+    out = []
+    with gzip.open(path, "rb") as f:
+        while True:
+            head = f.read(8)
+            if not head:
+                break
+            (lcrc,) = struct.unpack("<I", f.read(4))
+            if lcrc != _masked(head):
+                raise ValueError("corrupt length CRC")
+            (n,) = struct.unpack("<Q", head)
+            payload = f.read(n)
+            (pcrc,) = struct.unpack("<I", f.read(4))
+            if pcrc != _masked(payload):
+                raise ValueError("corrupt payload CRC")
+            out.append(json.loads(payload))
+    return out
+
+
+# ---- validation and model ----
+def validate(rec):
+    for key in REQUIRED:
+        if key not in rec:
+            raise ValueError(f"missing field: {key}")
+    px = rec["pixels"]
+    if len(px) != SIDE or any(len(row) != SIDE for row in px):
+        raise ValueError("shape mismatch: expected 4x4")
+    return rec
+
+
+def predict(rec):
+    """Fixed rule: any non-zero pixel -> class 1."""
+    return 1 if any(v for row in rec["pixels"] for v in row) else 0
+
+
+def evaluate(records):
+    """Align by record_id, map unseen labels to -1, exclude them from accuracy."""
+    aligned = sorted((validate(r) for r in records), key=lambda r: r["record_id"])
+    rows, correct, scored = [], 0, 0
+    for r in aligned:
+        label = r["label"] if r["label"] in KNOWN_LABELS else FALLBACK_LABEL
+        pred = predict(r)
+        rows.append((r["record_id"], label, pred))
+        if label != FALLBACK_LABEL:
+            scored += 1
+            correct += int(pred == label)
+    return {"rows": rows, "scored": scored,
+            "accuracy": correct / scored if scored else None}
+
+
+def shuffled(records, seed=SEED):
     out = list(records)
     random.Random(seed).shuffle(out)
     return out
