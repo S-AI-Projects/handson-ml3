@@ -1,0 +1,22 @@
+.F.........
+======================================================================
+FAIL: test_exact_split_manifest (test_pipeline.TestClassificationSplit.test_exact_split_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t012/test_pipeline.py", line 29, in test_exact_split_manifest
+    self.assertEqual(create_manifest(self.records), expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'train': ['r2', 'r3', 'r7', 'r8'], 'validation': ['r[27 chars]r5']} != {'train': ['wrong', 'r3', 'r7', 'r8'], 'validation': [30 chars]r5']}
+  {'test': ['r1', 'r5'],
+-  'train': ['r2', 'r3', 'r7', 'r8'],
+?              ^
+
++  'train': ['wrong', 'r3', 'r7', 'r8'],
+?             + ^^^
+
+   'validation': ['r4', 'r6']}
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+FAILED (failures=1)
