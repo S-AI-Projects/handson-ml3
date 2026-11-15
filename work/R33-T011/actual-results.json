@@ -1,0 +1,34 @@
+{
+  "valid_fixture_errors": [],
+  "split_validation_errors": [],
+  "invalid_cases": {
+    "missing_record_id": [
+      {
+        "record_id": "<missing>",
+        "field": "record_id",
+        "reason": "Required field is missing."
+      }
+    ],
+    "duplicate_record_id": [
+      {
+        "record_id": "dup",
+        "field": "record_id",
+        "reason": "Duplicate record ID."
+      }
+    ],
+    "text_in_numeric_field": [
+      {
+        "record_id": "text1",
+        "field": "x1",
+        "reason": "Expected a numeric scalar; text, tensors and nested values are not allowed."
+      }
+    ],
+    "tensor_like_nested_value": [
+      {
+        "record_id": "tensor1",
+        "field": "x2",
+        "reason": "Expected a numeric scalar; text, tensors and nested values are not allowed."
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+test_intentional_failure (test_failure_probe.FailureProbe.test_intentional_failure) ... FAIL
+test_boolean_in_numeric_field_fails (test_pipeline.TestDataContract.test_boolean_in_numeric_field_fails) ... ok
+test_duplicate_record_id_fails (test_pipeline.TestDataContract.test_duplicate_record_id_fails) ... ok
+test_empty_record_id_fails (test_pipeline.TestDataContract.test_empty_record_id_fails) ... ok
+test_error_report_has_record_id_field_and_reason (test_pipeline.TestDataContract.test_error_report_has_record_id_field_and_reason) ... ok
+test_fixture_has_six_records (test_pipeline.TestDataContract.test_fixture_has_six_records) ... ok
+test_formula_is_correct (test_pipeline.TestDataContract.test_formula_is_correct) ... ok
+test_infinity_fails (test_pipeline.TestDataContract.test_infinity_fails) ... ok
+test_malformed_record_fails (test_pipeline.TestDataContract.test_malformed_record_fails) ... ok
+test_malformed_splits_fail (test_pipeline.TestDataContract.test_malformed_splits_fail) ... ok
+test_missing_numeric_field_fails (test_pipeline.TestDataContract.test_missing_numeric_field_fails) ... ok
+test_missing_record_id_fails (test_pipeline.TestDataContract.test_missing_record_id_fails) ... ok
+test_nan_fails (test_pipeline.TestDataContract.test_nan_fails) ... ok
+test_nested_value_fails (test_pipeline.TestDataContract.test_nested_value_fails) ... ok
+test_non_list_dataset_fails (test_pipeline.TestDataContract.test_non_list_dataset_fails) ... ok
+test_overlapping_splits_fail (test_pipeline.TestDataContract.test_overlapping_splits_fail) ... ok
+test_required_splits_are_correct (test_pipeline.TestDataContract.test_required_splits_are_correct) ... ok
+test_text_in_numeric_field_fails (test_pipeline.TestDataContract.test_text_in_numeric_field_fails) ... ok
+test_unexpected_field_fails (test_pipeline.TestDataContract.test_unexpected_field_fails) ... ok
+test_valid_fixture_passes (test_pipeline.TestDataContract.test_valid_fixture_passes) ... ok
+test_wrong_split_fails (test_pipeline.TestDataContract.test_wrong_split_fails) ... ok
+
+======================================================================
+FAIL: test_intentional_failure (test_failure_probe.FailureProbe.test_intentional_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t011/test_failure_probe.py", line 5, in test_intentional_failure
+    self.assertTrue(False, 'Intentional failure probe')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Intentional failure probe
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.001s
+
+FAILED (failures=1)
+
+Intentional failure test exit code: 1

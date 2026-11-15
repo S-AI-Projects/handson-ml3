@@ -1,0 +1,10 @@
+{
+  "valid_fixture": "Pass with no validation errors.",
+  "split_validation": "Pass with no validation errors.",
+  "invalid_cases": {
+    "missing_record_id": "Fail; report missing record_id.",
+    "duplicate_record_id": "Fail; report duplicate record_id.",
+    "text_in_numeric_field": "Fail; report x1 numeric scalar violation.",
+    "tensor_like_nested_value": "Fail; report x2 numeric scalar violation."
+  }
+}
