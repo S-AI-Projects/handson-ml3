@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+AssertionError: Intentional failure: changed expected record count
+Intentional failure exit code: 1

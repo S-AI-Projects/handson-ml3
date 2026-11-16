@@ -1,0 +1,23 @@
+{
+  "fixture_type": "simulated_pipeline_verification",
+  "description": "Six fictional text records for testing the saved-pipeline interface. This is not a real corpus.",
+  "seed": 42,
+  "schema": {
+    "record_id": "non-empty unique string",
+    "text": "non-empty string",
+    "label": "integer, either 0 or 1"
+  },
+  "records": [
+    {"record_id": "t1", "text": "red apple", "label": 1},
+    {"record_id": "t2", "text": "green apple", "label": 1},
+    {"record_id": "t3", "text": "blue sky", "label": 0},
+    {"record_id": "t4", "text": "dark sky", "label": 0},
+    {"record_id": "t5", "text": "red fruit", "label": 1},
+    {"record_id": "t6", "text": "blue cloud", "label": 0}
+  ],
+  "splits": {
+    "train": ["t1", "t2", "t3", "t4"],
+    "validation": ["t5"],
+    "test": ["t6"]
+  }
+}

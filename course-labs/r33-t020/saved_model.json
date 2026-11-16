@@ -1,0 +1,44 @@
+{
+  "class_log_prior": {
+    "0": -0.6931471805599453,
+    "1": -0.6931471805599453
+  },
+  "classes": [
+    0,
+    1
+  ],
+  "config": {
+    "algorithm": "multinomial_naive_bayes",
+    "seed": 42,
+    "smoothing_alpha": 1.0,
+    "tokenizer": "lowercase_alphanumeric"
+  },
+  "format": "r33-t020-text-pipeline",
+  "token_log_prob": {
+    "0": {
+      "apple": -2.3025850929940455,
+      "blue": -1.6094379124341003,
+      "dark": -1.6094379124341003,
+      "green": -2.3025850929940455,
+      "red": -2.3025850929940455,
+      "sky": -1.2039728043259361
+    },
+    "1": {
+      "apple": -1.2039728043259361,
+      "blue": -2.3025850929940455,
+      "dark": -2.3025850929940455,
+      "green": -1.6094379124341003,
+      "red": -1.6094379124341003,
+      "sky": -2.3025850929940455
+    }
+  },
+  "version": 1,
+  "vocabulary": [
+    "apple",
+    "blue",
+    "dark",
+    "green",
+    "red",
+    "sky"
+  ]
+}

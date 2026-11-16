@@ -1,0 +1,22 @@
+test_duplicate_training_id_fails (test_pipeline.SavedPipelineTests.test_duplicate_training_id_fails) ... ok
+test_empty_text_fails (test_pipeline.SavedPipelineTests.test_empty_text_fails) ... ok
+test_expected_test_prediction (test_pipeline.SavedPipelineTests.test_expected_test_prediction) ... ok
+test_expected_validation_prediction (test_pipeline.SavedPipelineTests.test_expected_validation_prediction) ... ok
+test_fixture_has_six_records (test_pipeline.SavedPipelineTests.test_fixture_has_six_records) ... ok
+test_fixture_ids_and_labels (test_pipeline.SavedPipelineTests.test_fixture_ids_and_labels) ... ok
+test_invalid_training_label_fails (test_pipeline.SavedPipelineTests.test_invalid_training_label_fails) ... ok
+test_missing_model_parameter_fails (test_pipeline.SavedPipelineTests.test_missing_model_parameter_fails) ... ok
+test_missing_record_id_fails (test_pipeline.SavedPipelineTests.test_missing_record_id_fails) ... ok
+test_missing_text_fails (test_pipeline.SavedPipelineTests.test_missing_text_fails) ... ok
+test_prediction_does_not_need_training_records (test_pipeline.SavedPipelineTests.test_prediction_does_not_need_training_records) ... ok
+test_save_and_reload_preserves_predictions (test_pipeline.SavedPipelineTests.test_save_and_reload_preserves_predictions) ... ok
+test_splits_are_explicit_and_disjoint (test_pipeline.SavedPipelineTests.test_splits_are_explicit_and_disjoint) ... ok
+test_unexpected_prediction_field_fails (test_pipeline.SavedPipelineTests.test_unexpected_prediction_field_fails) ... ok
+test_unsupported_model_version_fails (test_pipeline.SavedPipelineTests.test_unsupported_model_version_fails) ... ok
+test_wrong_model_format_fails (test_pipeline.SavedPipelineTests.test_wrong_model_format_fails) ... ok
+test_wrong_record_id_type_fails (test_pipeline.SavedPipelineTests.test_wrong_record_id_type_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.001s
+
+OK

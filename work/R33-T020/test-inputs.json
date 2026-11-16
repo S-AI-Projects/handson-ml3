@@ -1,0 +1,9 @@
+{
+  "prediction_inputs": [
+    {"record_id": "t5", "text": "red fruit"},
+    {"record_id": "t6", "text": "blue cloud"}
+  ],
+  "training_split": ["t1", "t2", "t3", "t4"],
+  "validation_split": ["t5"],
+  "test_split": ["t6"]
+}

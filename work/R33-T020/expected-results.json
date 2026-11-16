@@ -1,0 +1,8 @@
+{
+  "expected_predictions": [
+    {"record_id": "t5", "label": 1},
+    {"record_id": "t6", "label": 0}
+  ],
+  "save_reload_predictions_should_match": true,
+  "score_tolerance": 1e-12
+}
