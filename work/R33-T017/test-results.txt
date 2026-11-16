@@ -1,0 +1,21 @@
+test_all_images_are_four_by_four (test_pipeline.PipelineTests.test_all_images_are_four_by_four) ... ok
+test_contradictory_algorithm_setting_rejected (test_pipeline.PipelineTests.test_contradictory_algorithm_setting_rejected) ... ok
+test_duplicate_record_id_rejected (test_pipeline.PipelineTests.test_duplicate_record_id_rejected) ... ok
+test_exact_expected_predictions (test_pipeline.PipelineTests.test_exact_expected_predictions) ... ok
+test_fixture_has_six_images (test_pipeline.PipelineTests.test_fixture_has_six_images) ... ok
+test_fixture_must_be_labelled_synthetic (test_pipeline.PipelineTests.test_fixture_must_be_labelled_synthetic) ... ok
+test_group_leakage_rejected (test_pipeline.PipelineTests.test_group_leakage_rejected) ... ok
+test_incompatible_feature_order_rejected (test_pipeline.PipelineTests.test_incompatible_feature_order_rejected) ... ok
+test_incompatible_image_shape_rejected (test_pipeline.PipelineTests.test_incompatible_image_shape_rejected) ... ok
+test_invalid_pixel_value_rejected (test_pipeline.PipelineTests.test_invalid_pixel_value_rejected) ... ok
+test_missing_configuration_field_rejected (test_pipeline.PipelineTests.test_missing_configuration_field_rejected) ... ok
+test_reloaded_configuration_reproduces_predictions (test_pipeline.PipelineTests.test_reloaded_configuration_reproduces_predictions) ... ok
+test_split_must_cover_all_records (test_pipeline.PipelineTests.test_split_must_cover_all_records) ... ok
+test_unknown_configuration_field_rejected (test_pipeline.PipelineTests.test_unknown_configuration_field_rejected) ... ok
+test_valid_configuration (test_pipeline.PipelineTests.test_valid_configuration) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK
+Test exit code: 0

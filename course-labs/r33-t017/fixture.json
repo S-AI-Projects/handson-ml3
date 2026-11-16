@@ -1,0 +1,48 @@
+{
+  "data_type": "synthetic_cpu_smoke_fixture",
+  "description": "Six simulated 4x4 grayscale images. This is not a real-world dataset.",
+  "schema": {
+    "record_id": "non-empty unique string",
+    "group_id": "non-empty string; groups must not cross data splits",
+    "pixels": "4x4 matrix containing grayscale integer values 0 or 255",
+    "label": "integer class label: 0 or 1"
+  },
+  "records": [
+    {
+      "record_id": "img-01",
+      "group_id": "group-01",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "img-02",
+      "group_id": "group-02",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "img-03",
+      "group_id": "group-03",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "img-04",
+      "group_id": "group-04",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    },
+    {
+      "record_id": "img-05",
+      "group_id": "group-05",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    },
+    {
+      "record_id": "img-06",
+      "group_id": "group-06",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    }
+  ]
+}

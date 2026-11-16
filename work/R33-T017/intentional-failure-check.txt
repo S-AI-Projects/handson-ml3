@@ -1,0 +1,55 @@
+test_all_images_are_four_by_four (test_pipeline.PipelineTests.test_all_images_are_four_by_four) ... ok
+test_contradictory_algorithm_setting_rejected (test_pipeline.PipelineTests.test_contradictory_algorithm_setting_rejected) ... ok
+test_duplicate_record_id_rejected (test_pipeline.PipelineTests.test_duplicate_record_id_rejected) ... ok
+test_exact_expected_predictions (test_pipeline.PipelineTests.test_exact_expected_predictions) ... FAIL
+test_fixture_has_six_images (test_pipeline.PipelineTests.test_fixture_has_six_images) ... ok
+test_fixture_must_be_labelled_synthetic (test_pipeline.PipelineTests.test_fixture_must_be_labelled_synthetic) ... ok
+test_group_leakage_rejected (test_pipeline.PipelineTests.test_group_leakage_rejected) ... ok
+test_incompatible_feature_order_rejected (test_pipeline.PipelineTests.test_incompatible_feature_order_rejected) ... ok
+test_incompatible_image_shape_rejected (test_pipeline.PipelineTests.test_incompatible_image_shape_rejected) ... ok
+test_invalid_pixel_value_rejected (test_pipeline.PipelineTests.test_invalid_pixel_value_rejected) ... ok
+test_missing_configuration_field_rejected (test_pipeline.PipelineTests.test_missing_configuration_field_rejected) ... ok
+test_reloaded_configuration_reproduces_predictions (test_pipeline.PipelineTests.test_reloaded_configuration_reproduces_predictions) ... FAIL
+test_split_must_cover_all_records (test_pipeline.PipelineTests.test_split_must_cover_all_records) ... ok
+test_unknown_configuration_field_rejected (test_pipeline.PipelineTests.test_unknown_configuration_field_rejected) ... ok
+test_valid_configuration (test_pipeline.PipelineTests.test_valid_configuration) ... ok
+
+======================================================================
+FAIL: test_exact_expected_predictions (test_pipeline.PipelineTests.test_exact_expected_predictions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t017/test_pipeline.py", line 39, in test_exact_expected_predictions
+    self.assertEqual(run_pipeline(FIXTURE, CONFIG), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'train': {'img-01': 0, 'img-04': 1}, 'validation': {'img-02':[48 chars]: 1}} != {'train': {'img-01': 1, 'img-04': 1}, 'validation': {'img-02':[48 chars]: 1}}
+  {'test': {'img-03': 0, 'img-06': 1},
+-  'train': {'img-01': 0, 'img-04': 1},
+?                      ^
+
++  'train': {'img-01': 1, 'img-04': 1},
+?                      ^
+
+   'validation': {'img-02': 0, 'img-05': 1}}
+
+======================================================================
+FAIL: test_reloaded_configuration_reproduces_predictions (test_pipeline.PipelineTests.test_reloaded_configuration_reproduces_predictions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t017/test_pipeline.py", line 52, in test_reloaded_configuration_reproduces_predictions
+    self.assertEqual(reloaded, EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'train': {'img-01': 0, 'img-04': 1}, 'validation': {'img-02':[48 chars]: 1}} != {'train': {'img-01': 1, 'img-04': 1}, 'validation': {'img-02':[48 chars]: 1}}
+  {'test': {'img-03': 0, 'img-06': 1},
+-  'train': {'img-01': 0, 'img-04': 1},
+?                      ^
+
++  'train': {'img-01': 1, 'img-04': 1},
+?                      ^
+
+   'validation': {'img-02': 0, 'img-05': 1}}
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.002s
+
+FAILED (failures=2)
+Intentional failure exit code: 1

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "seed": 42,
+  "feature_order": ["pixels"],
+  "splits": {
+    "train": ["img-01", "img-04"],
+    "validation": ["img-02", "img-05"],
+    "test": ["img-03", "img-06"]
+  },
+  "algorithm": {
+    "name": "nearest_template",
+    "distance": "hamming",
+    "tie_break": "lowest_label"
+  }
+}
