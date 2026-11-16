@@ -1,0 +1,21 @@
+test_all_images_are_four_by_four (test_pipeline.TestImageBaseline.test_all_images_are_four_by_four) ... ok
+test_baseline_uses_training_labels (test_pipeline.TestImageBaseline.test_baseline_uses_training_labels) ... ok
+test_concrete_baseline_result (test_pipeline.TestImageBaseline.test_concrete_baseline_result) ... ok
+test_duplicate_record_id_is_rejected (test_pipeline.TestImageBaseline.test_duplicate_record_id_is_rejected) ... ok
+test_empty_training_split_is_rejected (test_pipeline.TestImageBaseline.test_empty_training_split_is_rejected) ... ok
+test_fixture_contains_three_of_each_label (test_pipeline.TestImageBaseline.test_fixture_contains_three_of_each_label) ... ok
+test_fixture_has_six_records (test_pipeline.TestImageBaseline.test_fixture_has_six_records) ... ok
+test_group_leakage_is_rejected (test_pipeline.TestImageBaseline.test_group_leakage_is_rejected) ... ok
+test_invalid_label_is_rejected (test_pipeline.TestImageBaseline.test_invalid_label_is_rejected) ... ok
+test_malformed_image_shape_is_rejected (test_pipeline.TestImageBaseline.test_malformed_image_shape_is_rejected) ... ok
+test_missing_record_id_is_rejected (test_pipeline.TestImageBaseline.test_missing_record_id_is_rejected) ... ok
+test_non_numeric_pixel_is_rejected (test_pipeline.TestImageBaseline.test_non_numeric_pixel_is_rejected) ... ok
+test_record_ids_are_unique (test_pipeline.TestImageBaseline.test_record_ids_are_unique) ... ok
+test_record_overlap_is_rejected (test_pipeline.TestImageBaseline.test_record_overlap_is_rejected) ... ok
+test_splits_are_disjoint (test_pipeline.TestImageBaseline.test_splits_are_disjoint) ... ok
+test_valid_fixture_passes (test_pipeline.TestImageBaseline.test_valid_fixture_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK

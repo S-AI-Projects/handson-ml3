@@ -1,0 +1,9 @@
+{
+  "baseline": "majority_class",
+  "training_majority_label": 0,
+  "test_predictions": {
+    "r3": 0
+  },
+  "test_ids": ["r3"],
+  "test_accuracy": 1.0
+}

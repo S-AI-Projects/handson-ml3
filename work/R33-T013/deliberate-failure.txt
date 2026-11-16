@@ -1,0 +1,21 @@
+test_concrete_baseline_result (test_negative_expected.TestImageBaseline.test_concrete_baseline_result) ... FAIL
+
+======================================================================
+FAIL: test_concrete_baseline_result (test_negative_expected.TestImageBaseline.test_concrete_baseline_result)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t013/test_negative_expected.py", line 62, in test_concrete_baseline_result
+    self.assertEqual(result["test_predictions"], {"r3": 1})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'r3': 0} != {'r3': 1}
+- {'r3': 0}
+?        ^
+
++ {'r3': 1}
+?        ^
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
