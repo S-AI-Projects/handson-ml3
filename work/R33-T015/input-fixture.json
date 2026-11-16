@@ -1,0 +1,55 @@
+{
+  "description": "Six synthetic 4x4 grayscale images for preprocessing pipeline verification only.",
+  "seed": 42,
+  "pixel_contract": {
+    "input_dtype": "integer pixel values",
+    "minimum": 0,
+    "maximum": 255,
+    "height": 4,
+    "width": 4,
+    "channels": 1
+  },
+  "records": [
+    {
+      "record_id": "r1",
+      "group_id": "g1",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "r2",
+      "group_id": "g2",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "r3",
+      "group_id": "g3",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "r4",
+      "group_id": "g4",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    },
+    {
+      "record_id": "r5",
+      "group_id": "g5",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    },
+    {
+      "record_id": "r6",
+      "group_id": "g6",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    }
+  ],
+  "splits": {
+    "train": ["r1", "r4"],
+    "validation": ["r2", "r5"],
+    "test": ["r3", "r6"]
+  }
+}

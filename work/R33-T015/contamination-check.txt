@@ -1,0 +1,2 @@
+PASS: contaminated training records rejected
+ValueError: fit accepts exactly the declared training records; validation/test contamination is not allowed

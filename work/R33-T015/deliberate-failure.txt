@@ -1,0 +1,40 @@
+test_white_diagonal_scales_to_one (test_negative_expected.TestImagePreprocessing.test_white_diagonal_scales_to_one) ... FAIL
+
+======================================================================
+FAIL: test_white_diagonal_scales_to_one (test_negative_expected.TestImagePreprocessing.test_white_diagonal_scales_to_one)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t015/test_negative_expected.py", line 83, in test_white_diagonal_scales_to_one
+    np.testing.assert_array_equal(output[3], expected)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rupaliverma/Downloads/handson-ml3/.venv/lib/python3.14/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header='Arrays are not equal',
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "/Users/rupaliverma/Downloads/handson-ml3/.venv/lib/python3.14/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 4 / 16 (25%)
+Mismatch at indices:
+ [0, 0, 0]: 1.0 (ACTUAL), 0.0 (DESIRED)
+ [1, 1, 0]: 1.0 (ACTUAL), 0.0 (DESIRED)
+ [2, 2, 0]: 1.0 (ACTUAL), 0.0 (DESIRED)
+ [3, 3, 0]: 1.0 (ACTUAL), 0.0 (DESIRED)
+Max absolute difference among violations: 1.
+Max relative difference among violations: inf
+ ACTUAL: array([[[1.],
+        [0.],
+        [0.],...
+ DESIRED: array([[[0.],
+        [0.],
+        [0.],...
+
+----------------------------------------------------------------------
+Ran 1 test in 0.012s
+
+FAILED (failures=1)
