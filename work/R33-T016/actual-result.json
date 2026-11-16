@@ -1,0 +1,49 @@
+{
+  "model": "small NumPy softmax CPU smoke classifier",
+  "model_type": "synthetic smoke model, not a production model",
+  "seed": 42,
+  "sample_count": 6,
+  "training_sample_count": 2,
+  "step_count": 20,
+  "loss": 0.10917260497808456,
+  "loss_is_finite": true,
+  "prediction_shape": [
+    6,
+    2
+  ],
+  "predictions": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "probabilities": [
+    [
+      0.8520392775535583,
+      0.14796066284179688
+    ],
+    [
+      0.8520392775535583,
+      0.14796066284179688
+    ],
+    [
+      0.8520392775535583,
+      0.14796066284179688
+    ],
+    [
+      0.046921610832214355,
+      0.9530783891677856
+    ],
+    [
+      0.046921610832214355,
+      0.9530783891677856
+    ],
+    [
+      0.046921610832214355,
+      0.9530783891677856
+    ]
+  ],
+  "status": "synthetic pipeline verification only"
+}

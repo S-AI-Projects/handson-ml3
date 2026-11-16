@@ -1,0 +1,26 @@
+test_all_records_are_assigned (test_pipeline.TestSmokePipeline.test_all_records_are_assigned) ... ok
+test_fixture_has_six_records (test_pipeline.TestSmokePipeline.test_fixture_has_six_records) ... ok
+test_fixture_has_three_records_per_class (test_pipeline.TestSmokePipeline.test_fixture_has_three_records_per_class) ... ok
+test_fixture_schema_is_valid (test_pipeline.TestSmokePipeline.test_fixture_schema_is_valid) ... ok
+test_group_ids_are_unique (test_pipeline.TestSmokePipeline.test_group_ids_are_unique) ... ok
+test_loss_is_finite (test_pipeline.TestSmokePipeline.test_loss_is_finite) ... ok
+test_more_than_twenty_updates_is_rejected (test_pipeline.TestSmokePipeline.test_more_than_twenty_updates_is_rejected) ... ok
+test_negative_pixel_is_rejected (test_pipeline.TestSmokePipeline.test_negative_pixel_is_rejected) ... ok
+test_out_of_range_pixel_is_rejected (test_pipeline.TestSmokePipeline.test_out_of_range_pixel_is_rejected) ... ok
+test_output_has_expected_prediction_shape (test_pipeline.TestSmokePipeline.test_output_has_expected_prediction_shape) ... ok
+test_output_has_six_predictions (test_pipeline.TestSmokePipeline.test_output_has_six_predictions) ... ok
+test_probabilities_are_finite (test_pipeline.TestSmokePipeline.test_probabilities_are_finite) ... ok
+test_probabilities_sum_to_one (test_pipeline.TestSmokePipeline.test_probabilities_sum_to_one) ... ok
+test_record_ids_are_unique (test_pipeline.TestSmokePipeline.test_record_ids_are_unique) ... ok
+test_run_is_deterministic (test_pipeline.TestSmokePipeline.test_run_is_deterministic) ... ok
+test_sample_count_is_bounded (test_pipeline.TestSmokePipeline.test_sample_count_is_bounded) ... ok
+test_split_overlap_is_rejected (test_pipeline.TestSmokePipeline.test_split_overlap_is_rejected) ... ok
+test_splits_are_disjoint (test_pipeline.TestSmokePipeline.test_splits_are_disjoint) ... ok
+test_splits_are_valid (test_pipeline.TestSmokePipeline.test_splits_are_valid) ... ok
+test_step_count_is_bounded (test_pipeline.TestSmokePipeline.test_step_count_is_bounded) ... ok
+test_wrong_image_dimensions_are_rejected (test_pipeline.TestSmokePipeline.test_wrong_image_dimensions_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.040s
+
+OK

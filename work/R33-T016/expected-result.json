@@ -1,0 +1,11 @@
+{
+  "sample_count": 6,
+  "training_sample_count": 2,
+  "step_count": 20,
+  "prediction_shape": [
+    6,
+    2
+  ],
+  "loss_is_finite": true,
+  "status": "synthetic pipeline verification only"
+}

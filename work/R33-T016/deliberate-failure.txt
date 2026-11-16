@@ -1,0 +1,26 @@
+test_output_has_expected_prediction_shape (test_negative_expected.TestSmokePipeline.test_output_has_expected_prediction_shape) ... FAIL
+
+======================================================================
+FAIL: test_output_has_expected_prediction_shape (test_negative_expected.TestSmokePipeline.test_output_has_expected_prediction_shape)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t016/test_negative_expected.py", line 68, in test_output_has_expected_prediction_shape
+    self.assertEqual(result["prediction_shape"], [6, 99])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [6, 2] != [6, 99]
+
+First differing element 1:
+2
+99
+
+- [6, 2]
+?     ^
+
++ [6, 99]
+?     ^^
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.009s
+
+FAILED (failures=1)
