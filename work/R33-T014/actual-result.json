@@ -1,0 +1,11 @@
+{
+  "classification": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "averaging": "binary positive class (label 1)",
+    "zero_denominator": 0.0
+  },
+  "regression_mae": 0.6666666666666666,
+  "fixture_record_count": 8,
+  "fixture_status": "synthetic pipeline verification only"
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Synthetic pipeline-verification fixture; not real-world data.",
+  "seed": 42,
+  "records": [
+    {"record_id": "r1", "group_id": "g1", "x1": 0, "x2": 1, "label": 0},
+    {"record_id": "r2", "group_id": "g2", "x1": 1, "x2": 1, "label": 0},
+    {"record_id": "r3", "group_id": "g3", "x1": 2, "x2": 1, "label": 0},
+    {"record_id": "r4", "group_id": "g4", "x1": 3, "x2": 1, "label": 0},
+    {"record_id": "r5", "group_id": "g5", "x1": 4, "x2": 1, "label": 1},
+    {"record_id": "r6", "group_id": "g6", "x1": 5, "x2": 1, "label": 1},
+    {"record_id": "r7", "group_id": "g7", "x1": 6, "x2": 1, "label": 1},
+    {"record_id": "r8", "group_id": "g8", "x1": 7, "x2": 1, "label": 1}
+  ],
+  "splits": {
+    "train": ["r1", "r2", "r5", "r6"],
+    "validation": ["r3", "r7"],
+    "test": ["r4", "r8"]
+  },
+  "classification_example": {
+    "truth": [1, 1, 0, 0],
+    "prediction": [1, 0, 1, 0]
+  },
+  "regression_example": {
+    "truth": [1, 2, 3],
+    "prediction": [1, 3, 2]
+  }
+}

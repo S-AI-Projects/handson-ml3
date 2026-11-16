@@ -1,0 +1,15 @@
+test_concrete_evaluation_result (test_negative_expected.TestEvaluationMetrics.test_concrete_evaluation_result) ... FAIL
+
+======================================================================
+FAIL: test_concrete_evaluation_result (test_negative_expected.TestEvaluationMetrics.test_concrete_evaluation_result)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rupaliverma/Downloads/handson-ml3/course-labs/r33-t014/test_negative_expected.py", line 110, in test_concrete_evaluation_result
+    self.assertEqual(result["classification"]["precision"], 0.9)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.5 != 0.9
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

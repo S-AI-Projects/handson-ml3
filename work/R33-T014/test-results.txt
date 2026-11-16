@@ -1,0 +1,22 @@
+test_classification_precision_and_recall (test_pipeline.TestEvaluationMetrics.test_classification_precision_and_recall) ... ok
+test_concrete_evaluation_result (test_pipeline.TestEvaluationMetrics.test_concrete_evaluation_result) ... ok
+test_duplicate_record_id_is_rejected (test_pipeline.TestEvaluationMetrics.test_duplicate_record_id_is_rejected) ... ok
+test_each_split_has_expected_class_balance (test_pipeline.TestEvaluationMetrics.test_each_split_has_expected_class_balance) ... ok
+test_fixed_stratified_split_passes (test_pipeline.TestEvaluationMetrics.test_fixed_stratified_split_passes) ... ok
+test_fixture_has_eight_records (test_pipeline.TestEvaluationMetrics.test_fixture_has_eight_records) ... ok
+test_fixture_schema_passes (test_pipeline.TestEvaluationMetrics.test_fixture_schema_passes) ... ok
+test_fixture_values_match_contract (test_pipeline.TestEvaluationMetrics.test_fixture_values_match_contract) ... ok
+test_invalid_label_is_rejected (test_pipeline.TestEvaluationMetrics.test_invalid_label_is_rejected) ... ok
+test_metric_rejects_different_lengths (test_pipeline.TestEvaluationMetrics.test_metric_rejects_different_lengths) ... ok
+test_metric_rejects_empty_inputs (test_pipeline.TestEvaluationMetrics.test_metric_rejects_empty_inputs) ... ok
+test_metric_rejects_invalid_class_label (test_pipeline.TestEvaluationMetrics.test_metric_rejects_invalid_class_label) ... ok
+test_record_and_group_ids_are_unique (test_pipeline.TestEvaluationMetrics.test_record_and_group_ids_are_unique) ... ok
+test_record_overlap_is_rejected (test_pipeline.TestEvaluationMetrics.test_record_overlap_is_rejected) ... ok
+test_regression_mae (test_pipeline.TestEvaluationMetrics.test_regression_mae) ... ok
+test_zero_precision_denominator_returns_zero (test_pipeline.TestEvaluationMetrics.test_zero_precision_denominator_returns_zero) ... ok
+test_zero_recall_denominator_returns_zero (test_pipeline.TestEvaluationMetrics.test_zero_recall_denominator_returns_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.001s
+
+OK
