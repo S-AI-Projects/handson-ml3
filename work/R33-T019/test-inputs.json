@@ -1,0 +1,52 @@
+{
+  "dataset_type": "synthetic_simulated",
+  "description": "Six synthetic 4x4 grayscale images for CPU-only pipeline verification.",
+  "seed": 42,
+  "image_shape": [4, 4],
+  "pixel_values": [0, 255],
+  "splits": ["train", "validation", "test"],
+  "records": [
+    {
+      "record_id": "img-001",
+      "group_id": "group-black-train",
+      "split": "train",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "img-002",
+      "group_id": "group-diagonal-train",
+      "split": "train",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    },
+    {
+      "record_id": "img-003",
+      "group_id": "group-black-validation",
+      "split": "validation",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "img-004",
+      "group_id": "group-diagonal-validation",
+      "split": "validation",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    },
+    {
+      "record_id": "img-005",
+      "group_id": "group-black-test",
+      "split": "test",
+      "pixels": [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+      "label": 0
+    },
+    {
+      "record_id": "img-006",
+      "group_id": "group-diagonal-test",
+      "split": "test",
+      "pixels": [[255,0,0,0],[0,255,0,0],[0,0,255,0],[0,0,0,255]],
+      "label": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "dataset_type": "synthetic_simulated",
+  "verification_type": "synthetic_pipeline_verification",
+  "record_count": 6,
+  "correct_count": 6,
+  "error_count": 0,
+  "results": [
+    {"record_id": "img-001", "group_id": "group-black-train", "split": "train", "expected_label": 0, "predicted_label": 0, "correct": true},
+    {"record_id": "img-002", "group_id": "group-diagonal-train", "split": "train", "expected_label": 1, "predicted_label": 1, "correct": true},
+    {"record_id": "img-003", "group_id": "group-black-validation", "split": "validation", "expected_label": 0, "predicted_label": 0, "correct": true},
+    {"record_id": "img-004", "group_id": "group-diagonal-validation", "split": "validation", "expected_label": 1, "predicted_label": 1, "correct": true},
+    {"record_id": "img-005", "group_id": "group-black-test", "split": "test", "expected_label": 0, "predicted_label": 0, "correct": true},
+    {"record_id": "img-006", "group_id": "group-diagonal-test", "split": "test", "expected_label": 1, "predicted_label": 1, "correct": true}
+  ]
+}

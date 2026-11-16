@@ -1,0 +1,21 @@
+test_all_images_are_four_by_four (test_pipeline.TestImageInputRobustness.test_all_images_are_four_by_four) ... ok
+test_all_splits_exist (test_pipeline.TestImageInputRobustness.test_all_splits_exist) ... ok
+test_all_synthetic_records_are_classified_correctly (test_pipeline.TestImageInputRobustness.test_all_synthetic_records_are_classified_correctly) ... ok
+test_black_image_is_classified_as_zero (test_pipeline.TestImageInputRobustness.test_black_image_is_classified_as_zero) ... ok
+test_duplicate_record_id_is_rejected (test_pipeline.TestImageInputRobustness.test_duplicate_record_id_is_rejected) ... ok
+test_fixture_has_six_images (test_pipeline.TestImageInputRobustness.test_fixture_has_six_images) ... ok
+test_fixture_is_valid (test_pipeline.TestImageInputRobustness.test_fixture_is_valid) ... ok
+test_group_ids_are_declared (test_pipeline.TestImageInputRobustness.test_group_ids_are_declared) ... ok
+test_missing_field_is_rejected (test_pipeline.TestImageInputRobustness.test_missing_field_is_rejected) ... ok
+test_missing_split_is_rejected (test_pipeline.TestImageInputRobustness.test_missing_split_is_rejected) ... ok
+test_record_ids_are_unique (test_pipeline.TestImageInputRobustness.test_record_ids_are_unique) ... ok
+test_shuffling_records_preserves_predictions_after_id_alignment (test_pipeline.TestImageInputRobustness.test_shuffling_records_preserves_predictions_after_id_alignment) ... ok
+test_three_black_and_three_diagonal_images (test_pipeline.TestImageInputRobustness.test_three_black_and_three_diagonal_images) ... ok
+test_unsupported_image_pattern_is_rejected (test_pipeline.TestImageInputRobustness.test_unsupported_image_pattern_is_rejected) ... ok
+test_white_diagonal_is_classified_as_one (test_pipeline.TestImageInputRobustness.test_white_diagonal_is_classified_as_one) ... ok
+test_wrong_image_shape_is_rejected (test_pipeline.TestImageInputRobustness.test_wrong_image_shape_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
