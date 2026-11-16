@@ -1,0 +1,16 @@
+{
+  "dataset_type": "synthetic_simulated",
+  "total_records": 9,
+  "error_count": 1,
+  "correct_count": 8,
+  "errors": [
+    {
+      "record_id": "val-03",
+      "episode_id": "ep-left-validation",
+      "split": "validation",
+      "expected_value": 0.0,
+      "predicted_value": 0.75,
+      "reason_category": "overestimated_zero_return"
+    }
+  ]
+}

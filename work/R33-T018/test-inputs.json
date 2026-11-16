@@ -1,0 +1,107 @@
+{
+  "dataset_type": "synthetic_simulated",
+  "seed": 42,
+  "gamma": 1.0,
+  "step_cap": 5,
+  "episodes": [
+    {
+      "episode_id": "ep-right-train",
+      "split": "train",
+      "transitions": [
+        {
+          "record_id": "train-01",
+          "state": 0,
+          "action": "right",
+          "next_state": 1,
+          "reward": 0,
+          "terminated": false,
+          "predicted_value": 1.0
+        },
+        {
+          "record_id": "train-02",
+          "state": 1,
+          "action": "right",
+          "next_state": 2,
+          "reward": 1,
+          "terminated": true,
+          "predicted_value": 1.0
+        }
+      ]
+    },
+    {
+      "episode_id": "ep-left-validation",
+      "split": "validation",
+      "transitions": [
+        {
+          "record_id": "val-01",
+          "state": 0,
+          "action": "left",
+          "next_state": 0,
+          "reward": 0,
+          "terminated": false,
+          "predicted_value": 0.0
+        },
+        {
+          "record_id": "val-02",
+          "state": 0,
+          "action": "left",
+          "next_state": 0,
+          "reward": 0,
+          "terminated": false,
+          "predicted_value": 0.0
+        },
+        {
+          "record_id": "val-03",
+          "state": 0,
+          "action": "left",
+          "next_state": 0,
+          "reward": 0,
+          "terminated": false,
+          "predicted_value": 0.75
+        },
+        {
+          "record_id": "val-04",
+          "state": 0,
+          "action": "left",
+          "next_state": 0,
+          "reward": 0,
+          "terminated": false,
+          "predicted_value": 0.0
+        },
+        {
+          "record_id": "val-05",
+          "state": 0,
+          "action": "left",
+          "next_state": 0,
+          "reward": 0,
+          "terminated": false,
+          "predicted_value": 0.0
+        }
+      ]
+    },
+    {
+      "episode_id": "ep-right-test",
+      "split": "test",
+      "transitions": [
+        {
+          "record_id": "test-01",
+          "state": 0,
+          "action": "right",
+          "next_state": 1,
+          "reward": 0,
+          "terminated": false,
+          "predicted_value": 1.0
+        },
+        {
+          "record_id": "test-02",
+          "state": 1,
+          "action": "right",
+          "next_state": 2,
+          "reward": 1,
+          "terminated": true,
+          "predicted_value": 1.0
+        }
+      ]
+    }
+  ]
+}

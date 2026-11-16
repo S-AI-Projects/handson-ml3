@@ -1,0 +1,19 @@
+test_all_splits_exist (test_pipeline.TestReinforcementLearningAnalysis.test_all_splits_exist) ... ok
+test_correct_predictions_are_not_reported (test_pipeline.TestReinforcementLearningAnalysis.test_correct_predictions_are_not_reported) ... ok
+test_data_is_synthetic (test_pipeline.TestReinforcementLearningAnalysis.test_data_is_synthetic) ... ok
+test_duplicate_record_ids_are_rejected (test_pipeline.TestReinforcementLearningAnalysis.test_duplicate_record_ids_are_rejected) ... ok
+test_error_reason_is_reported (test_pipeline.TestReinforcementLearningAnalysis.test_error_reason_is_reported) ... ok
+test_expected_and_predicted_values_are_reported (test_pipeline.TestReinforcementLearningAnalysis.test_expected_and_predicted_values_are_reported) ... ok
+test_five_left_actions_hit_step_cap (test_pipeline.TestReinforcementLearningAnalysis.test_five_left_actions_hit_step_cap) ... ok
+test_fixture_is_valid (test_pipeline.TestReinforcementLearningAnalysis.test_fixture_is_valid) ... ok
+test_invalid_action_is_rejected (test_pipeline.TestReinforcementLearningAnalysis.test_invalid_action_is_rejected) ... ok
+test_missing_split_is_rejected (test_pipeline.TestReinforcementLearningAnalysis.test_missing_split_is_rejected) ... ok
+test_non_boolean_terminated_is_rejected (test_pipeline.TestReinforcementLearningAnalysis.test_non_boolean_terminated_is_rejected) ... ok
+test_record_counts (test_pipeline.TestReinforcementLearningAnalysis.test_record_counts) ... ok
+test_report_finds_injected_wrong_prediction (test_pipeline.TestReinforcementLearningAnalysis.test_report_finds_injected_wrong_prediction) ... ok
+test_right_actions_reach_terminal_state (test_pipeline.TestReinforcementLearningAnalysis.test_right_actions_reach_terminal_state) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK

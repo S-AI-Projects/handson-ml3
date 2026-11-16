@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    assert 1 == 999, "Intentional failure check"
+           ^^^^^^^^
+AssertionError: Intentional failure check
+Intentional failure exit code: 1
