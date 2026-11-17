@@ -1,0 +1,23 @@
+test_csv_fixture_loading_and_validation (test_pipeline.TestR33T001DataContract.test_csv_fixture_loading_and_validation)
+The CSV representation of the fixture must also load and validate identically. ... ok
+test_duplicate_record_id_fails (test_pipeline.TestR33T001DataContract.test_duplicate_record_id_fails)
+Duplicate record_ids must report duplicate failure without dropping earlier valid rows silently. ... ok
+test_fixed_stratified_split (test_pipeline.TestR33T001DataContract.test_fixed_stratified_split)
+Stratified split on 8-row fixture must yield exactly balanced train and test sets. ... ok
+test_fixture_exact_dimensions_and_values (test_pipeline.TestR33T001DataContract.test_fixture_exact_dimensions_and_values)
+The synthetic fixture must have 8 rows with specified x1, x2, and label sequences. ... ok
+test_invalid_label_fails (test_pipeline.TestR33T001DataContract.test_invalid_label_fails)
+Labels other than binary integer 0 or 1 must fail. ... ok
+test_malformed_numeric_and_tensor_data_fails (test_pipeline.TestR33T001DataContract.test_malformed_numeric_and_tensor_data_fails)
+Strings, lists/tensors, NaNs, and booleans in x1 or x2 must be rejected with reasons. ... ok
+test_missing_group_id_fails (test_pipeline.TestR33T001DataContract.test_missing_group_id_fails)
+Missing or empty group_id must be flagged. ... ok
+test_missing_or_empty_record_id_fails (test_pipeline.TestR33T001DataContract.test_missing_or_empty_record_id_fails)
+Missing or whitespace-only record_id must fail and report the field and reason. ... ok
+test_valid_fixture_passes_without_errors (test_pipeline.TestR33T001DataContract.test_valid_fixture_passes_without_errors)
+The valid 8-row fixture must pass schema validation with zero errors. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
