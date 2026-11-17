@@ -1,0 +1,25 @@
+test_balanced_split_evaluation (test_pipeline.TestR33T003MajorityBaseline.test_balanced_split_evaluation)
+Balanced split test (1 zero, 1 diagonal in test). ... ok
+test_csv_fixture_identical_loading (test_pipeline.TestR33T003MajorityBaseline.test_csv_fixture_identical_loading)
+CSV fixture must load identically to JSON fixture. ... ok
+test_fixture_exact_dimensions_and_patterns (test_pipeline.TestR33T003MajorityBaseline.test_fixture_exact_dimensions_and_patterns)
+Fixture must contain 6 synthetic 4x4 images: 3 all-zero (label 0) and 3 diagonal (label 1). ... ok
+test_held_out_evaluation_metric_accuracy (test_pipeline.TestR33T003MajorityBaseline.test_held_out_evaluation_metric_accuracy)
+Evaluating majority class 0 on test set [img_05, img_06] (both label 1) ... ok
+test_invalid_label_rejected (test_pipeline.TestR33T003MajorityBaseline.test_invalid_label_rejected)
+Labels other than binary 0 or 1 must raise SchemaError. ... ok
+test_majority_baseline_learns_only_from_training_data (test_pipeline.TestR33T003MajorityBaseline.test_majority_baseline_learns_only_from_training_data)
+When training on [img_01, img_02, img_03] (all label 0) + [img_04] (label 1), ... ok
+test_malformed_pixel_dimensions_rejected (test_pipeline.TestR33T003MajorityBaseline.test_malformed_pixel_dimensions_rejected)
+Non-16 pixel count must raise SchemaError. ... ok
+test_out_of_range_pixel_values_rejected (test_pipeline.TestR33T003MajorityBaseline.test_out_of_range_pixel_values_rejected)
+Pixel values outside [0, 255] or negative must raise SchemaError. ... ok
+test_overlapping_train_test_split_rejected (test_pipeline.TestR33T003MajorityBaseline.test_overlapping_train_test_split_rejected)
+Intentional overlap in split IDs must raise ValueError. ... ok
+test_predict_before_fit_raises_error (test_pipeline.TestR33T003MajorityBaseline.test_predict_before_fit_raises_error)
+Calling predict or evaluate before fit must raise NotFittedError. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK

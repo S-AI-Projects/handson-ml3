@@ -1,0 +1,38 @@
+[
+  {
+    "record_id": "img_01",
+    "group_id": "grp_zero_1",
+    "label": 0,
+    "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "record_id": "img_02",
+    "group_id": "grp_zero_1",
+    "label": 0,
+    "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "record_id": "img_03",
+    "group_id": "grp_zero_2",
+    "label": 0,
+    "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "record_id": "img_04",
+    "group_id": "grp_diag_1",
+    "label": 1,
+    "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255]
+  },
+  {
+    "record_id": "img_05",
+    "group_id": "grp_diag_2",
+    "label": 1,
+    "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255]
+  },
+  {
+    "record_id": "img_06",
+    "group_id": "grp_diag_2",
+    "label": 1,
+    "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255]
+  }
+]
