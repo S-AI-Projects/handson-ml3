@@ -1,0 +1,23 @@
+test_chronological_time_series_leakage_rejected (test_pipeline.TestR33T002SplitManifest.test_chronological_time_series_leakage_rejected)
+Future observations leaking into the training set must raise LeakageError. ... ok
+test_csv_fixture_loads_and_splits_identically (test_pipeline.TestR33T002SplitManifest.test_csv_fixture_loads_and_splits_identically)
+CSV fixture must load and generate identical manifest. ... ok
+test_deterministic_manifest_on_clean_fixture (test_pipeline.TestR33T002SplitManifest.test_deterministic_manifest_on_clean_fixture)
+Manifest builds cleanly and assigns r1..r4 to train, r5 to val, r6 to test. ... ok
+test_fixture_exact_dimensions_and_formula (test_pipeline.TestR33T002SplitManifest.test_fixture_exact_dimensions_and_formula)
+Fixture must contain 6 synthetic rows satisfying target = 2*x1 + 1. ... ok
+test_malformed_numeric_and_empty_id (test_pipeline.TestR33T002SplitManifest.test_malformed_numeric_and_empty_id)
+Malformed target or missing record_id must raise SchemaValidationError. ... ok
+test_manifest_reproducibility (test_pipeline.TestR33T002SplitManifest.test_manifest_reproducibility)
+Repeated runs must produce identical manifests. ... ok
+test_overlap_between_train_and_test_rejected (test_pipeline.TestR33T002SplitManifest.test_overlap_between_train_and_test_rejected)
+Intentional overlap between train and test must raise LeakageError. ... ok
+test_overlapping_groups_rejected (test_pipeline.TestR33T002SplitManifest.test_overlapping_groups_rejected)
+Group leakage across splits must raise LeakageError. ... ok
+test_overlapping_record_ids_rejected (test_pipeline.TestR33T002SplitManifest.test_overlapping_record_ids_rejected)
+Intentional overlap between train and validation must raise LeakageError. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

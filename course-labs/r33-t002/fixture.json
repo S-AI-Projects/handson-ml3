@@ -1,0 +1,8 @@
+[
+  {"record_id": "r1", "x1": 0, "x2": 1, "target": 1, "timestamp": 1, "group_id": "grp_train_1"},
+  {"record_id": "r2", "x1": 1, "x2": 1, "target": 3, "timestamp": 2, "group_id": "grp_train_2"},
+  {"record_id": "r3", "x1": 2, "x2": 1, "target": 5, "timestamp": 3, "group_id": "grp_train_3"},
+  {"record_id": "r4", "x1": 3, "x2": 1, "target": 7, "timestamp": 4, "group_id": "grp_train_4"},
+  {"record_id": "r5", "x1": 4, "x2": 1, "target": 9, "timestamp": 5, "group_id": "grp_val"},
+  {"record_id": "r6", "x1": 5, "x2": 1, "target": 11, "timestamp": 6, "group_id": "grp_test"}
+]
