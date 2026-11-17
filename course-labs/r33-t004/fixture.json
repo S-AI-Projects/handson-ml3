@@ -1,0 +1,10 @@
+[
+  {"record_id": "rec_001", "group_id": "grp_0", "x1": 0, "x2": 1, "label": 0},
+  {"record_id": "rec_002", "group_id": "grp_0", "x1": 1, "x2": 1, "label": 0},
+  {"record_id": "rec_003", "group_id": "grp_0", "x1": 2, "x2": 1, "label": 0},
+  {"record_id": "rec_004", "group_id": "grp_0", "x1": 3, "x2": 1, "label": 0},
+  {"record_id": "rec_005", "group_id": "grp_1", "x1": 4, "x2": 1, "label": 1},
+  {"record_id": "rec_006", "group_id": "grp_1", "x1": 5, "x2": 1, "label": 1},
+  {"record_id": "rec_007", "group_id": "grp_1", "x1": 6, "x2": 1, "label": 1},
+  {"record_id": "rec_008", "group_id": "grp_1", "x1": 7, "x2": 1, "label": 1}
+]

@@ -1,0 +1,23 @@
+test_canonical_classification_precision_recall_half (test_pipeline.TestR33T004MetricCorrectness.test_canonical_classification_precision_recall_half)
+Required canonical case: ... ok
+test_canonical_regression_mae_two_thirds (test_pipeline.TestR33T004MetricCorrectness.test_canonical_regression_mae_two_thirds)
+Required canonical case: ... ok
+test_csv_fixture_loading_parity (test_pipeline.TestR33T004MetricCorrectness.test_csv_fixture_loading_parity)
+CSV fixture must load identically to JSON fixture. ... ok
+test_decision_stump_perfect_separator (test_pipeline.TestR33T004MetricCorrectness.test_decision_stump_perfect_separator)
+A decision stump with threshold 3.5 separates the 8-row fixture with 100% precision/recall. ... ok
+test_decision_stump_regularized_suboptimal (test_pipeline.TestR33T004MetricCorrectness.test_decision_stump_regularized_suboptimal)
+A regularized stump with threshold 5.5 misses samples x1=4 and x1=5 (FN=2). ... ok
+test_stratified_split_preserves_class_balance (test_pipeline.TestR33T004MetricCorrectness.test_stratified_split_preserves_class_balance)
+Stratified split (50/50) must yield 2 zeroes and 2 ones in each split. ... ok
+test_synthetic_fixture_dimensions_and_contract (test_pipeline.TestR33T004MetricCorrectness.test_synthetic_fixture_dimensions_and_contract)
+Fixture must have 8 rows with x1=[0..7], x2=1, label=[0,0,0,0,1,1,1,1]. ... ok
+test_zero_denominator_no_positive_ground_truth (test_pipeline.TestR33T004MetricCorrectness.test_zero_denominator_no_positive_ground_truth)
+When ground truth has no positive labels, TP + FN = 0; recall denominator is zero. ... ok
+test_zero_denominator_no_positive_predictions (test_pipeline.TestR33T004MetricCorrectness.test_zero_denominator_no_positive_predictions)
+When model predicts all zeroes, TP + FP = 0. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

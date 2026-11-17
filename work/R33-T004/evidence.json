@@ -1,0 +1,78 @@
+{
+  "task": "R33-T004",
+  "student": "NAKSHATRA MESHRAM",
+  "timestamp": "2026-11-17T09:06:38.136919+00:00",
+  "tool_versions": {
+    "python_version": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "datetime_utc": "2026-11-17T09:06:38.091535+00:00",
+    "git_version": "git version 2.54.0 (Apple Git-157)"
+  },
+  "test_results": [
+    {
+      "check": "canonical_classification_metrics",
+      "truth": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "prediction": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "expected": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "accuracy": 0.5,
+        "f1_score": 0.5
+      },
+      "actual": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1_score": 0.5,
+        "tp": 1,
+        "fp": 1,
+        "tn": 1,
+        "fn": 1,
+        "zero_division_applied": false
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "canonical_regression_metrics",
+      "truth": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "prediction": [
+        1.0,
+        3.0,
+        2.0
+      ],
+      "expected_mae": 0.6666666666666666,
+      "actual_mae": 0.6666666666666666,
+      "status": "PASS"
+    },
+    {
+      "check": "zero_denominator_safeguard",
+      "expected_precision": 0.0,
+      "actual_precision": 0.0,
+      "zero_division_applied": true,
+      "status": "PASS"
+    },
+    {
+      "check": "synthetic_fixture_decision_stump",
+      "fixture_count": 8,
+      "stump_threshold": 3.5,
+      "expected_accuracy": 1.0,
+      "actual_accuracy": 1.0,
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "ALL_CHECKS_PASSED"
+}

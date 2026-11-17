@@ -1,0 +1,9 @@
+record_id,group_id,x1,x2,label
+rec_001,grp_0,0,1,0
+rec_002,grp_0,1,1,0
+rec_003,grp_0,2,1,0
+rec_004,grp_0,3,1,0
+rec_005,grp_1,4,1,1
+rec_006,grp_1,5,1,1
+rec_007,grp_1,6,1,1
+rec_008,grp_1,7,1,1
