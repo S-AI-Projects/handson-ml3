@@ -1,0 +1,75 @@
+{
+  "task_id": "R33-T010",
+  "student": "NAKSHATRA MESHRAM",
+  "section": "02 end to end machine learning project / Data Cleaning",
+  "fixture_summary": {
+    "num_records": 6,
+    "formula": "target = 2 * x1 + 1",
+    "splits": {
+      "train": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "validation": [
+        "r5"
+      ],
+      "test": [
+        "r6"
+      ]
+    },
+    "is_synthetic": true,
+    "disclaimer": "Synthetic regression fixture, not real-world dataset"
+  },
+  "saved_model_metadata": {
+    "format": "safe_json_pipeline",
+    "schema_version": "1.0.0",
+    "feature_schema": {
+      "feature_names": [
+        "x1",
+        "x2"
+      ],
+      "feature_types": {
+        "x1": "float",
+        "x2": "float"
+      }
+    },
+    "parameters": {
+      "weights": [
+        2.000000000000001,
+        1.0
+      ],
+      "intercept": 0.0
+    },
+    "metadata": {
+      "num_training_samples": 4,
+      "training_split_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "algorithm": "LinearRegression",
+      "formula": "target = 2 * x1 + 1",
+      "is_synthetic": true
+    }
+  },
+  "predictions_parity": {
+    "tolerance": 1e-09,
+    "predictions_before_save": [
+      11.000000000000004
+    ],
+    "predictions_after_reload": [
+      11.000000000000004
+    ],
+    "parity_verified": true
+  },
+  "schema_validation_checks": {
+    "missing_feature_rejected": true,
+    "extra_feature_rejected": true,
+    "nan_feature_rejected": true,
+    "isolated_inference_verified": true
+  },
+  "verification_status": "ALL_CHECKS_PASSED"
+}

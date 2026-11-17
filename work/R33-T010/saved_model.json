@@ -1,0 +1,33 @@
+{
+  "format": "safe_json_pipeline",
+  "schema_version": "1.0.0",
+  "feature_schema": {
+    "feature_names": [
+      "x1",
+      "x2"
+    ],
+    "feature_types": {
+      "x1": "float",
+      "x2": "float"
+    }
+  },
+  "parameters": {
+    "weights": [
+      2.000000000000001,
+      1.0
+    ],
+    "intercept": 0.0
+  },
+  "metadata": {
+    "num_training_samples": 4,
+    "training_split_ids": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "algorithm": "LinearRegression",
+    "formula": "target = 2 * x1 + 1",
+    "is_synthetic": true
+  }
+}
