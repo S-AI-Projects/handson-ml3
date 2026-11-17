@@ -1,0 +1,21 @@
+test_csv_and_json_parity (test_pipeline.TestR33T009InputPerturbationRobustness.test_csv_and_json_parity)
+CSV and JSON fixtures must load identical data. ... ok
+test_deliberate_mutation_fails (test_pipeline.TestR33T009InputPerturbationRobustness.test_deliberate_mutation_fails)
+Mutation test: changing expected prediction label causes assertion failure. ... ok
+test_fixture_structure_and_stratification (test_pipeline.TestR33T009InputPerturbationRobustness.test_fixture_structure_and_stratification)
+Fixture must contain 8 synthetic rows with x1=[0..7], x2=1, label=[0,0,0,0,1,1,1,1]. ... ok
+test_gradient_boosted_classifier_accuracy (test_pipeline.TestR33T009InputPerturbationRobustness.test_gradient_boosted_classifier_accuracy)
+Model must achieve 100% accuracy on train, validation, and test splits. ... ok
+test_record_order_permutation_invariance_with_stable_ids (test_pipeline.TestR33T009InputPerturbationRobustness.test_record_order_permutation_invariance_with_stable_ids)
+Permuting record sequence within a batch must preserve identical predictions per record ID. ... ok
+test_robustness_verification_result_invariants (test_pipeline.TestR33T009InputPerturbationRobustness.test_robustness_verification_result_invariants)
+Verify the structured robustness verification result. ... ok
+test_unsupported_invalid_value_rejected (test_pipeline.TestR33T009InputPerturbationRobustness.test_unsupported_invalid_value_rejected)
+Invalid feature values (NaN or Inf) must raise InvalidFeatureValueError. ... ok
+test_unsupported_shape_rejected (test_pipeline.TestR33T009InputPerturbationRobustness.test_unsupported_shape_rejected)
+Unsupported feature counts (e.g. 1 or 3 features) must raise IncompatibleShapeError. ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

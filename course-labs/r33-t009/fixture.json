@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "fixture_name": "R33-T009 8-Row Synthetic Classification Fixture",
+    "description": "Eight synthetic rows with x1=[0..7], x2=1, label=[0,0,0,0,1,1,1,1]. Stratified split with stable IDs. Explicitly labelled for pipeline verification; not a real dataset.",
+    "dataset_type": "pipeline_verification",
+    "is_synthetic": true,
+    "num_records": 8,
+    "splits": {
+      "train": ["r1", "r4", "r5", "r8"],
+      "validation": ["r2", "r6"],
+      "test": ["r3", "r7"]
+    },
+    "stratification": {
+      "train": {"0": 2, "1": 2},
+      "validation": {"0": 1, "1": 1},
+      "test": {"0": 1, "1": 1}
+    }
+  },
+  "records": [
+    {
+      "record_id": "r1",
+      "group_id": "g0",
+      "x1": 0.0,
+      "x2": 1.0,
+      "label": 0,
+      "split": "train"
+    },
+    {
+      "record_id": "r2",
+      "group_id": "g0",
+      "x1": 1.0,
+      "x2": 1.0,
+      "label": 0,
+      "split": "validation"
+    },
+    {
+      "record_id": "r3",
+      "group_id": "g0",
+      "x1": 2.0,
+      "x2": 1.0,
+      "label": 0,
+      "split": "test"
+    },
+    {
+      "record_id": "r4",
+      "group_id": "g0",
+      "x1": 3.0,
+      "x2": 1.0,
+      "label": 0,
+      "split": "train"
+    },
+    {
+      "record_id": "r5",
+      "group_id": "g1",
+      "x1": 4.0,
+      "x2": 1.0,
+      "label": 1,
+      "split": "train"
+    },
+    {
+      "record_id": "r6",
+      "group_id": "g1",
+      "x1": 5.0,
+      "x2": 1.0,
+      "label": 1,
+      "split": "validation"
+    },
+    {
+      "record_id": "r7",
+      "group_id": "g1",
+      "x1": 6.0,
+      "x2": 1.0,
+      "label": 1,
+      "split": "test"
+    },
+    {
+      "record_id": "r8",
+      "group_id": "g1",
+      "x1": 7.0,
+      "x2": 1.0,
+      "label": 1,
+      "split": "train"
+    }
+  ]
+}

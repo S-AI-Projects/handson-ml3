@@ -1,0 +1,73 @@
+{
+  "task_id": "R33-T009",
+  "student": "NAKSHATRA MESHRAM",
+  "section": "07 ensemble learning and random forests / Gradient Boosting",
+  "fixture_summary": {
+    "num_records": 8,
+    "feature_columns": [
+      "x1",
+      "x2"
+    ],
+    "label_values": [
+      0,
+      1
+    ],
+    "splits": {
+      "train": [
+        "r1",
+        "r4",
+        "r5",
+        "r8"
+      ],
+      "validation": [
+        "r2",
+        "r6"
+      ],
+      "test": [
+        "r3",
+        "r7"
+      ]
+    },
+    "is_synthetic": true,
+    "disclaimer": "Synthetic classification fixture, not real-world dataset"
+  },
+  "robustness_evaluation": {
+    "transformation_name": "record_order_permutation_with_stable_ids",
+    "order_invariance_verified": true,
+    "unsupported_shape_rejected": true,
+    "unsupported_value_rejected": true,
+    "num_records_tested": 8,
+    "predictions_original": {
+      "r1": 0,
+      "r2": 0,
+      "r3": 0,
+      "r4": 0,
+      "r5": 1,
+      "r6": 1,
+      "r7": 1,
+      "r8": 1
+    },
+    "predictions_permuted": {
+      "r4": 0,
+      "r5": 1,
+      "r7": 1,
+      "r8": 1,
+      "r3": 0,
+      "r6": 1,
+      "r1": 0,
+      "r2": 0
+    },
+    "accuracy_original": 1.0,
+    "accuracy_permuted": 1.0,
+    "is_synthetic": true,
+    "claims_broad_adversarial_robustness": false,
+    "cpu_only": true
+  },
+  "verification_criteria": {
+    "valid_transformation_preserves_result_after_id_alignment": true,
+    "unsupported_input_shape_rejected": true,
+    "unsupported_value_rejected": true,
+    "no_broad_adversarial_claims": true
+  },
+  "verification_status": "ALL_CHECKS_PASSED"
+}
