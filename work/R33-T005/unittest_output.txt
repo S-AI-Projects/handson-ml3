@@ -1,0 +1,21 @@
+test_csv_fixture_loading_parity (test_pipeline.TestR33T005PreprocessingContract.test_csv_fixture_loading_parity)
+CSV fixture must load identically to JSON fixture. ... ok
+test_deliberate_contamination_fixture_rejected (test_pipeline.TestR33T005PreprocessingContract.test_deliberate_contamination_fixture_rejected)
+Records marked with contamination or infinite values must be rejected. ... ok
+test_fitting_on_held_out_data_rejected (test_pipeline.TestR33T005PreprocessingContract.test_fitting_on_held_out_data_rejected)
+Supplying validation or test records to fit() must raise ContaminationError. ... ok
+test_fixture_dimensions_formula_and_splits (test_pipeline.TestR33T005PreprocessingContract.test_fixture_dimensions_formula_and_splits)
+Fixture must contain 6 rows: r1..r4 (train), r5 (val), r6 (test) obeying target=2*x1+1. ... ok
+test_missing_value_imputed_with_training_mean (test_pipeline.TestR33T005PreprocessingContract.test_missing_value_imputed_with_training_mean)
+A missing feature value in test data is imputed with training mean and scales to 0.0. ... ok
+test_output_values_dtype_and_shape_on_training_fit (test_pipeline.TestR33T005PreprocessingContract.test_output_values_dtype_and_shape_on_training_fit)
+Fitting on train (r1..r4, x1=[0,1,2,3]) yields mean=1.5, var=1.25, std=sqrt(1.25). ... ok
+test_transform_before_fit_raises_error (test_pipeline.TestR33T005PreprocessingContract.test_transform_before_fit_raises_error)
+Transforming before fit must raise NotFittedError. ... ok
+test_transform_is_read_only_and_cannot_fit (test_pipeline.TestR33T005PreprocessingContract.test_transform_is_read_only_and_cannot_fit)
+Calling transform on held-out data must NOT alter any learned parameters. ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

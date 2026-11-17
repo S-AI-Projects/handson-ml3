@@ -1,0 +1,8 @@
+[
+  {"record_id": "r1", "x1": 0, "x2": 1, "target": 1, "split": "train"},
+  {"record_id": "r2", "x1": 1, "x2": 1, "target": 3, "split": "train"},
+  {"record_id": "r3", "x1": 2, "x2": 1, "target": 5, "split": "train"},
+  {"record_id": "r4", "x1": 3, "x2": 1, "target": 7, "split": "train"},
+  {"record_id": "r5", "x1": 4, "x2": 1, "target": 9, "split": "validation"},
+  {"record_id": "r6", "x1": 5, "x2": 1, "target": 11, "split": "test"}
+]
