@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "seed": 42,
+  "feature_ordering": ["x1", "x2"],
+  "target_column": "target",
+  "split_ids": {
+    "train": ["r1", "r2", "r3", "r4"],
+    "validation": ["r5"],
+    "test": ["r6"]
+  },
+  "algorithm_settings": {
+    "algorithm": "LinearRegression",
+    "fit_intercept": true,
+    "regularization_alpha": 0.0,
+    "max_iter": 100,
+    "tolerance": 1e-05
+  }
+}

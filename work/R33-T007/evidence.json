@@ -1,0 +1,91 @@
+{
+  "task_id": "R33-T007",
+  "student": "NAKSHATRA MESHRAM",
+  "section": "02 end to end machine learning project / Looking for Correlations",
+  "fixture_summary": {
+    "num_records": 6,
+    "formula": "target = 2 * x1 + 1",
+    "features": [
+      "x1",
+      "x2"
+    ],
+    "target": "target",
+    "splits": {
+      "train": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "validation": [
+        "r5"
+      ],
+      "test": [
+        "r6"
+      ]
+    },
+    "is_synthetic": true,
+    "disclaimer": "Synthetic regression fixture, not real-world dataset"
+  },
+  "configuration": {
+    "schema_version": "1.0.0",
+    "seed": 42,
+    "feature_ordering": [
+      "x1",
+      "x2"
+    ],
+    "target_column": "target",
+    "split_ids": {
+      "train": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "validation": [
+        "r5"
+      ],
+      "test": [
+        "r6"
+      ]
+    },
+    "algorithm_settings": {
+      "algorithm": "LinearRegression",
+      "fit_intercept": true,
+      "regularization_alpha": 0.0,
+      "max_iter": 100,
+      "tolerance": 1e-05
+    }
+  },
+  "reproducibility_verification": {
+    "serialized_matches_reloaded": true,
+    "learned_weights": {
+      "x1": 2.000000000000001,
+      "x2": 1.0
+    },
+    "train_mse": 2.7610131682735413e-30,
+    "validation_mse": 1.262177448353619e-29,
+    "test_mse": 1.262177448353619e-29,
+    "predictions": {
+      "train": {
+        "r1": 1.0,
+        "r2": 3.000000000000001,
+        "r3": 5.000000000000002,
+        "r4": 7.000000000000003
+      },
+      "validation": {
+        "r5": 9.000000000000004
+      },
+      "test": {
+        "r6": 11.000000000000004
+      }
+    }
+  },
+  "rejection_checks": {
+    "unknown_field_rejected": true,
+    "contradictory_splits_rejected": true,
+    "incompatible_shape_rejected": true,
+    "invalid_algorithm_settings_rejected": true
+  },
+  "verification_status": "ALL_CHECKS_PASSED"
+}

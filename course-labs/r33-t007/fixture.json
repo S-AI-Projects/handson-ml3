@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "fixture_name": "R33-T007 6-Row Synthetic Deterministic Formula Fixture",
+    "description": "Six synthetic rows obeying target = 2*x1 + 1. Explicitly labelled for pipeline verification; not a real dataset.",
+    "dataset_type": "pipeline_verification",
+    "is_synthetic": true,
+    "num_records": 6,
+    "formula": "target = 2 * x1 + 1",
+    "splits": {
+      "train": ["r1", "r2", "r3", "r4"],
+      "validation": ["r5"],
+      "test": ["r6"]
+    }
+  },
+  "records": [
+    {
+      "record_id": "r1",
+      "x1": 0.0,
+      "x2": 1.0,
+      "target": 1.0,
+      "split": "train"
+    },
+    {
+      "record_id": "r2",
+      "x1": 1.0,
+      "x2": 1.0,
+      "target": 3.0,
+      "split": "train"
+    },
+    {
+      "record_id": "r3",
+      "x1": 2.0,
+      "x2": 1.0,
+      "target": 5.0,
+      "split": "train"
+    },
+    {
+      "record_id": "r4",
+      "x1": 3.0,
+      "x2": 1.0,
+      "target": 7.0,
+      "split": "train"
+    },
+    {
+      "record_id": "r5",
+      "x1": 4.0,
+      "x2": 1.0,
+      "target": 9.0,
+      "split": "validation"
+    },
+    {
+      "record_id": "r6",
+      "x1": 5.0,
+      "x2": 1.0,
+      "target": 11.0,
+      "split": "test"
+    }
+  ]
+}

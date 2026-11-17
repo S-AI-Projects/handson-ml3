@@ -1,0 +1,25 @@
+test_contradictory_algorithm_settings_rejected (test_pipeline.TestR33T007ConfigReproducibility.test_contradictory_algorithm_settings_rejected)
+Reject contradictory algorithm parameters (e.g. negative alpha, zero max_iter). ... ok
+test_contradictory_overlapping_splits_rejected (test_pipeline.TestR33T007ConfigReproducibility.test_contradictory_overlapping_splits_rejected)
+Reject configuration where a record ID appears in multiple splits. ... ok
+test_csv_and_json_parity (test_pipeline.TestR33T007ConfigReproducibility.test_csv_and_json_parity)
+CSV and JSON fixtures must load identical data. ... ok
+test_deliberate_mutation_fails (test_pipeline.TestR33T007ConfigReproducibility.test_deliberate_mutation_fails)
+Mutation test: changing expected prediction value triggers assertion failure. ... ok
+test_fixture_records_and_formula_dimensions (test_pipeline.TestR33T007ConfigReproducibility.test_fixture_records_and_formula_dimensions)
+Fixture must contain six synthetic rows: x1=[0,1,2,3,4,5], x2=1, target=2*x1+1. ... ok
+test_incompatible_input_shape_rejected (test_pipeline.TestR33T007ConfigReproducibility.test_incompatible_input_shape_rejected)
+Feeding incompatible feature dimensions must raise SchemaError. ... ok
+test_reloaded_configuration_reconstructs_identical_splits_and_predictions (test_pipeline.TestR33T007ConfigReproducibility.test_reloaded_configuration_reconstructs_identical_splits_and_predictions)
+Reloaded configuration must reconstruct the exact same split and predictions. ... ok
+test_unknown_algorithm_setting_rejected (test_pipeline.TestR33T007ConfigReproducibility.test_unknown_algorithm_setting_rejected)
+Reject configuration with unknown algorithm setting. ... ok
+test_unknown_split_id_rejected (test_pipeline.TestR33T007ConfigReproducibility.test_unknown_split_id_rejected)
+Split referencing record ID not present in dataset must be rejected. ... ok
+test_unknown_top_level_field_rejected (test_pipeline.TestR33T007ConfigReproducibility.test_unknown_top_level_field_rejected)
+Reject configuration with unknown top-level field. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
