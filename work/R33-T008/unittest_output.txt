@@ -1,0 +1,21 @@
+test_aggregate_error_counts_match_detailed_rows (test_pipeline.TestR33T008ErrorAnalysis.test_aggregate_error_counts_match_detailed_rows)
+Aggregate error counts must match the detailed rows exactly: ... ok
+test_baseline_error_report_zero_errors (test_pipeline.TestR33T008ErrorAnalysis.test_baseline_error_report_zero_errors)
+Without fault injection, all predictions are correct. ... ok
+test_csv_and_json_parity (test_pipeline.TestR33T008ErrorAnalysis.test_csv_and_json_parity)
+CSV and JSON fixtures must load identical data. ... ok
+test_deliberate_mutation_fails (test_pipeline.TestR33T008ErrorAnalysis.test_deliberate_mutation_fails)
+Mutation test: changing expected error record ID triggers assertion failure. ... ok
+test_deterministic_model_perfect_fit (test_pipeline.TestR33T008ErrorAnalysis.test_deterministic_model_perfect_fit)
+Model fitted on r1..r4 must learn w1=2.0, w2=1.0 and predict accurately. ... ok
+test_fixture_records_and_formula (test_pipeline.TestR33T008ErrorAnalysis.test_fixture_records_and_formula)
+Fixture must contain six synthetic rows obeying target = 2*x1 + 1: ... ok
+test_injected_wrong_prediction_detected (test_pipeline.TestR33T008ErrorAnalysis.test_injected_wrong_prediction_detected)
+Inject deliberately wrong prediction for record r6 (e.g. 99.0 instead of 11.0). ... ok
+test_multiple_injected_errors_aggregate_correctly (test_pipeline.TestR33T008ErrorAnalysis.test_multiple_injected_errors_aggregate_correctly)
+Multiple injected errors (e.g. r5 and r6) must be categorized and counted accurately. ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

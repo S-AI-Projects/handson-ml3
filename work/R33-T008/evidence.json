@@ -1,0 +1,76 @@
+{
+  "task_id": "R33-T008",
+  "student": "NAKSHATRA MESHRAM",
+  "section": "04 training linear models / Learning Curves",
+  "fixture_summary": {
+    "num_records": 6,
+    "formula": "target = 2 * x1 + 1",
+    "splits": {
+      "train": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "validation": [
+        "r5"
+      ],
+      "test": [
+        "r6"
+      ]
+    },
+    "is_synthetic": true,
+    "disclaimer": "Synthetic regression fixture, not real-world dataset"
+  },
+  "model_parameters": {
+    "w1": 2.000000000000001,
+    "w2": 1.0,
+    "formula_match": true
+  },
+  "clean_baseline_evaluation": {
+    "total_evaluated": 6,
+    "total_correct": 6,
+    "total_errors": 0,
+    "error_threshold": 0.01,
+    "mean_absolute_error": 2.0724163126336257e-15,
+    "max_absolute_error": 3.552713678800501e-15,
+    "aggregate_counts_by_reason": {},
+    "error_records": [],
+    "is_synthetic": true,
+    "cpu_only": true
+  },
+  "fault_injected_evaluation": {
+    "total_evaluated": 6,
+    "total_correct": 5,
+    "total_errors": 1,
+    "error_threshold": 0.01,
+    "mean_absolute_error": 14.66666666666667,
+    "max_absolute_error": 88.0,
+    "aggregate_counts_by_reason": {
+      "sensor_saturation_artifact": 1
+    },
+    "error_records": [
+      {
+        "record_id": "r6",
+        "split": "test",
+        "x1": 5.0,
+        "x2": 1.0,
+        "expected_value": 11.0,
+        "predicted_value": 99.0,
+        "residual": 88.0,
+        "absolute_error": 88.0,
+        "relative_error": 8.0,
+        "reason_category": "sensor_saturation_artifact"
+      }
+    ],
+    "is_synthetic": true,
+    "cpu_only": true
+  },
+  "verification_criteria": {
+    "injected_fault_present_in_report": true,
+    "injected_fault_record_id": "r6",
+    "correct_predictions_excluded_from_details": true,
+    "aggregate_counts_match_detailed_rows": true
+  },
+  "verification_status": "ALL_CHECKS_PASSED"
+}
