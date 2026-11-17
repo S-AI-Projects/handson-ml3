@@ -1,0 +1,23 @@
+test_bounded_smoke_run_finite_outputs_and_loss (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_bounded_smoke_run_finite_outputs_and_loss)
+Assert smoke run produces finite losses, recorded step count <= 20, ... ok
+test_csv_and_json_parity (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_csv_and_json_parity)
+Loading from CSV and JSON must produce identical records and pixel arrays. ... ok
+test_deliberate_mutation_fails (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_deliberate_mutation_fails)
+Mutation test: deliberately altering weight tying or corrupting losses ... ok
+test_fixture_structure_and_labels (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_fixture_structure_and_labels)
+Fixture must contain six synthetic 4x4 grayscale images: ... ok
+test_naive_constant_baseline_explicitly_labelled (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_naive_constant_baseline_explicitly_labelled)
+NaiveConstantModel must be explicitly labelled as a baseline (is_baseline=True), ... ok
+test_prediction_shape_and_bounds (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_prediction_shape_and_bounds)
+Assert reconstruction shapes match (N, 16) flat and (N, 4, 4) 2D. ... ok
+test_sample_limit_enforced (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_sample_limit_enforced)
+Providing > 32 samples must raise ValueError. ... ok
+test_step_limit_enforced (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_step_limit_enforced)
+Requesting > 20 steps must raise ValueError. ... ok
+test_weight_tying_identity_constraint (test_pipeline.TestR33T006TiedWeightsSmokeRun.test_weight_tying_identity_constraint)
+Assert that decoder weight matrix W_dec is strictly the transpose of W_enc. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+OK

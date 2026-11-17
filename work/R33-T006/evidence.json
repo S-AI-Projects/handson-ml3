@@ -1,0 +1,56 @@
+{
+  "task_id": "R33-T006",
+  "student": "NAKSHATRA MESHRAM",
+  "section": "17 autoencoders gans and diffusion models / Tying weights",
+  "fixture_summary": {
+    "num_records": 6,
+    "image_shape": [
+      4,
+      4
+    ],
+    "num_pixels": 16,
+    "classes": {
+      "0": "all_zero (3 images: img_001, img_002, img_003)",
+      "1": "white_diagonal (3 images: img_004, img_005, img_006)"
+    },
+    "is_synthetic": true,
+    "disclaimer": "Synthetic CPU smoke fixture, not real-world dataset"
+  },
+  "smoke_run_metrics": {
+    "tied_weights_model": {
+      "model_name": "TiedWeightsAutoencoder",
+      "is_baseline": false,
+      "weights_tied": true,
+      "num_samples": 6,
+      "max_samples_bound": 32,
+      "steps_executed": 15,
+      "max_steps_bound": 20,
+      "epochs_executed": 1,
+      "initial_loss": 0.12946195237492622,
+      "final_loss": 0.08553413813808329,
+      "loss_is_finite": true,
+      "loss_reduced": true,
+      "cpu_only": true
+    },
+    "naive_constant_baseline": {
+      "model_name": "NaiveConstantModel",
+      "is_baseline": true,
+      "weights_tied": false,
+      "loss": 0.0625,
+      "loss_is_finite": true,
+      "steps_executed": 1
+    }
+  },
+  "weight_tying_verification": {
+    "encoder_shape": [
+      16,
+      4
+    ],
+    "decoder_shape": [
+      4,
+      16
+    ],
+    "transposed_equality_verified": true
+  },
+  "verification_status": "ALL_CHECKS_PASSED"
+}

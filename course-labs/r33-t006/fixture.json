@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "fixture_name": "R33-T006 4x4 Synthetic Grayscale Smoke Fixture",
+    "description": "Six synthetic 4x4 grayscale images for bounded CPU autoencoder smoke run. Not a real-world dataset.",
+    "dataset_type": "pipeline_verification",
+    "is_synthetic": true,
+    "image_height": 4,
+    "image_width": 4,
+    "num_channels": 1,
+    "num_pixels": 16,
+    "sample_limit": 32,
+    "max_update_steps": 20,
+    "max_epochs": 1,
+    "classes": {
+      "0": "all_zero",
+      "1": "white_diagonal"
+    }
+  },
+  "records": [
+    {
+      "record_id": "img_001",
+      "group_id": "g_zero",
+      "split": "train",
+      "label": 0,
+      "pixels_2d": [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+      ],
+      "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "record_id": "img_002",
+      "group_id": "g_zero",
+      "split": "train",
+      "label": 0,
+      "pixels_2d": [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+      ],
+      "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "record_id": "img_003",
+      "group_id": "g_zero",
+      "split": "validation",
+      "label": 0,
+      "pixels_2d": [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+      ],
+      "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "record_id": "img_004",
+      "group_id": "g_diag",
+      "split": "train",
+      "label": 1,
+      "pixels_2d": [
+        [255, 0, 0, 0],
+        [0, 255, 0, 0],
+        [0, 0, 255, 0],
+        [0, 0, 0, 255]
+      ],
+      "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255]
+    },
+    {
+      "record_id": "img_005",
+      "group_id": "g_diag",
+      "split": "train",
+      "label": 1,
+      "pixels_2d": [
+        [255, 0, 0, 0],
+        [0, 255, 0, 0],
+        [0, 0, 255, 0],
+        [0, 0, 0, 255]
+      ],
+      "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255]
+    },
+    {
+      "record_id": "img_006",
+      "group_id": "g_diag",
+      "split": "test",
+      "label": 1,
+      "pixels_2d": [
+        [255, 0, 0, 0],
+        [0, 255, 0, 0],
+        [0, 0, 255, 0],
+        [0, 0, 0, 255]
+      ],
+      "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255]
+    }
+  ]
+}
