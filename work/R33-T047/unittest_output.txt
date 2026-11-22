@@ -1,0 +1,10 @@
+test_input_shape_validation_at_inference (test_pipeline.TestSafeModelPersistence.test_input_shape_validation_at_inference) ... ok
+test_no_credentials_needed_at_inference (test_pipeline.TestSafeModelPersistence.test_no_credentials_needed_at_inference) ... ok
+test_reject_pickle_extension (test_pipeline.TestSafeModelPersistence.test_reject_pickle_extension) ... ok
+test_reject_schema_version_mismatch (test_pipeline.TestSafeModelPersistence.test_reject_schema_version_mismatch) ... ok
+test_save_and_reload_exact_agreement (test_pipeline.TestSafeModelPersistence.test_save_and_reload_exact_agreement) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
