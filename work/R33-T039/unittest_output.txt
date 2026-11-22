@@ -1,0 +1,25 @@
+test_deliberate_tampering_detected (test_pipeline.TestPipelineVerificationAndTampering.test_deliberate_tampering_detected)
+Deliberately changing expected base prediction must fail. ... ok
+test_full_perturbation_pipeline_run (test_pipeline.TestPipelineVerificationAndTampering.test_full_perturbation_pipeline_run)
+Pipeline runner passes all assertions. ... ok
+test_missing_record_id_rejected (test_pipeline.TestRejectionOfUnsupportedInputs.test_missing_record_id_rejected)
+Input record missing 'record_id' must raise ValueError. ... ok
+test_missing_text_field_rejected (test_pipeline.TestRejectionOfUnsupportedInputs.test_missing_text_field_rejected)
+Input record missing 'text' field must raise ValueError. ... ok
+test_non_string_text_rejected (test_pipeline.TestRejectionOfUnsupportedInputs.test_non_string_text_rejected)
+Input record with non-string text (e.g. numeric or None) must raise ValueError. ... ok
+test_record_order_perturbation_preserves_id_aligned_predictions (test_pipeline.TestRobustnessTransformations.test_record_order_perturbation_preserves_id_aligned_predictions)
+Permuting input record order must preserve exact predictions when aligned by record_id. ... ok
+test_unseen_tokens_do_not_crash_model (test_pipeline.TestRobustnessTransformations.test_unseen_tokens_do_not_crash_model)
+Records with completely unseen tokens run cleanly through model using fallback. ... ok
+test_fixture_integrity (test_pipeline.TestTextFixtureAndTokenizer.test_fixture_integrity)
+Six fictional records with IDs t1..t6 and specified text/labels. ... ok
+test_formatting_perturbation_preserves_encoding (test_pipeline.TestTextFixtureAndTokenizer.test_formatting_perturbation_preserves_encoding)
+Leading/trailing spaces and uppercase formatting produce equivalent token sequences. ... ok
+test_unseen_token_fallback_to_unk (test_pipeline.TestTextFixtureAndTokenizer.test_unseen_token_fallback_to_unk)
+Unseen vocabulary tokens must explicitly map to UNK_ID (1). ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK
