@@ -1,0 +1,10 @@
+test_empty_fit_raises_error (test_pipeline.TestMinimalBaseline.test_empty_fit_raises_error) ... ok
+test_fixture_integrity (test_pipeline.TestMinimalBaseline.test_fixture_integrity) ... ok
+test_majority_baseline_balanced_fit (test_pipeline.TestMinimalBaseline.test_majority_baseline_balanced_fit) ... ok
+test_majority_baseline_imbalanced_fit (test_pipeline.TestMinimalBaseline.test_majority_baseline_imbalanced_fit) ... ok
+test_unfitted_predict_raises_error (test_pipeline.TestMinimalBaseline.test_unfitted_predict_raises_error) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
