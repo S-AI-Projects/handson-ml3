@@ -1,0 +1,11 @@
+test_reject_contradictory_max_depth (test_pipeline.TestDecisionTreeConfig.test_reject_contradictory_max_depth) ... ok
+test_reject_split_overlap (test_pipeline.TestDecisionTreeConfig.test_reject_split_overlap) ... ok
+test_reject_unknown_criterion (test_pipeline.TestDecisionTreeConfig.test_reject_unknown_criterion) ... ok
+test_reject_unknown_field (test_pipeline.TestDecisionTreeConfig.test_reject_unknown_field) ... ok
+test_round_trip_serialization (test_pipeline.TestDecisionTreeConfig.test_round_trip_serialization) ... ok
+test_stratified_split_balance (test_pipeline.TestDecisionTreeConfig.test_stratified_split_balance) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
