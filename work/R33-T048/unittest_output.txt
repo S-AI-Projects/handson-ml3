@@ -1,0 +1,10 @@
+test_aggregate_counts_match_detailed_rows (test_pipeline.TestRegressionErrorAnalysis.test_aggregate_counts_match_detailed_rows) ... ok
+test_correct_predictions_not_flagged (test_pipeline.TestRegressionErrorAnalysis.test_correct_predictions_not_flagged) ... ok
+test_fixture_formula_consistency (test_pipeline.TestRegressionErrorAnalysis.test_fixture_formula_consistency) ... ok
+test_injected_error_appears_in_report (test_pipeline.TestRegressionErrorAnalysis.test_injected_error_appears_in_report) ... ok
+test_split_design (test_pipeline.TestRegressionErrorAnalysis.test_split_design) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

@@ -1,0 +1,10 @@
+{
+  "student": "SHAKTI KUMAR SINGH",
+  "task_id": "R33-T048",
+  "issue_number": 48,
+  "target_item": "02_end_to_end_machine_learning_project.ipynb",
+  "test_returncode": 0,
+  "tests_passed": true,
+  "automated_check_cmd": "python3 -m unittest discover -s course-labs/r33-t048 -p \"test_*.py\" -v",
+  "verified": true
+}
