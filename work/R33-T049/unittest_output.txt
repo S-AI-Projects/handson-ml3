@@ -1,0 +1,9 @@
+test_expected_predictions (test_pipeline.TestInputPerturbationRobustness.test_expected_predictions) ... ok
+test_missing_field_rejected (test_pipeline.TestInputPerturbationRobustness.test_missing_field_rejected) ... ok
+test_record_order_permutation_invariance (test_pipeline.TestInputPerturbationRobustness.test_record_order_permutation_invariance) ... ok
+test_shape_mismatch_rejected (test_pipeline.TestInputPerturbationRobustness.test_shape_mismatch_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
