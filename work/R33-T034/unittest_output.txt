@@ -1,0 +1,23 @@
+test_csv_matches_json_fixture (test_pipeline.TestR33T034MetricCorrectness.test_csv_matches_json_fixture)
+CSV and JSON fixtures must represent identical records. ... ok
+test_deliberate_mutation_detection (test_pipeline.TestR33T034MetricCorrectness.test_deliberate_mutation_detection)
+Deliberately mutating expected MAE from 2/3 to 0.0 must raise an AssertionError. ... ok
+test_fixture_schema_validation (test_pipeline.TestR33T034MetricCorrectness.test_fixture_schema_validation)
+Valid fixture passes schema validation with zero errors. ... ok
+test_mandated_classification_precision_recall_case (test_pipeline.TestR33T034MetricCorrectness.test_mandated_classification_precision_recall_case)
+For classification, truth[1,1,0,0]/prediction[1,0,1,0] must yield precision=0.5, recall=0.5. ... ok
+test_mandated_regression_mae_case (test_pipeline.TestR33T034MetricCorrectness.test_mandated_regression_mae_case)
+For regression, truth[1,2,3]/prediction[1,3,2] must yield MAE = 2/3. ... ok
+test_schema_validator_rejects_malformed_records (test_pipeline.TestR33T034MetricCorrectness.test_schema_validator_rejects_malformed_records)
+Empty text, duplicate ID, or invalid label must be rejected with descriptive ValidationError. ... ok
+test_synthetic_fixture_exact_records (test_pipeline.TestR33T034MetricCorrectness.test_synthetic_fixture_exact_records)
+Fixture must contain exactly the 6 mandated records with IDs t1..t6 and specified texts and labels. ... ok
+test_text_exact_match_metric (test_pipeline.TestR33T034MetricCorrectness.test_text_exact_match_metric)
+Text generation modality metric computes exact string match ratio. ... ok
+test_zero_denominator_precision_and_recall (test_pipeline.TestR33T034MetricCorrectness.test_zero_denominator_precision_and_recall)
+Zero positive predictions or zero positive truths must gracefully return zero_division without ZeroDivisionError. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
