@@ -1,0 +1,7 @@
+{
+  "python": "3.14.7",
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "arch": "arm64",
+  "unittest": "built-in",
+  "implementation": "standard-library-only offline CPU"
+}
