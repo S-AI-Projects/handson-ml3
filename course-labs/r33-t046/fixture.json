@@ -1,0 +1,58 @@
+[
+  {
+    "record_id": "r1",
+    "group_id": "g1",
+    "x1": 0,
+    "x2": 1,
+    "label": 0
+  },
+  {
+    "record_id": "r2",
+    "group_id": "g1",
+    "x1": 1,
+    "x2": 1,
+    "label": 0
+  },
+  {
+    "record_id": "r3",
+    "group_id": "g2",
+    "x1": 2,
+    "x2": 1,
+    "label": 0
+  },
+  {
+    "record_id": "r4",
+    "group_id": "g2",
+    "x1": 3,
+    "x2": 1,
+    "label": 0
+  },
+  {
+    "record_id": "r5",
+    "group_id": "g3",
+    "x1": 4,
+    "x2": 1,
+    "label": 1
+  },
+  {
+    "record_id": "r6",
+    "group_id": "g3",
+    "x1": 5,
+    "x2": 1,
+    "label": 1
+  },
+  {
+    "record_id": "r7",
+    "group_id": "g4",
+    "x1": 6,
+    "x2": 1,
+    "label": 1
+  },
+  {
+    "record_id": "r8",
+    "group_id": "g4",
+    "x1": 7,
+    "x2": 1,
+    "label": 1
+  }
+]
