@@ -1,0 +1,10 @@
+{
+  "student": "SHAKTI KUMAR SINGH",
+  "task_id": "R33-T041",
+  "issue_number": 41,
+  "target_item": "15_processing_sequences_using_rnns_and_cnns.ipynb",
+  "test_returncode": 0,
+  "tests_passed": true,
+  "automated_check_cmd": "python3 -m unittest discover -s course-labs/r33-t041 -p \"test_*.py\" -v",
+  "verified": true
+}
