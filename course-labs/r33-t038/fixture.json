@@ -1,0 +1,38 @@
+{
+  "description": "Synthetic fixture for R33-T038: Explain an error case (AdaBoost / Error Analysis). Eight synthetic rows used as a pipeline error-analysis verification fixture. NOT observations from any real dataset.",
+  "schema": {
+    "record_id": "string — stable unique row identifier",
+    "group_id": "string — group identifier (g0=class 0, g1=class 1)",
+    "x1": "float — feature coordinate [0..7]",
+    "x2": "float — constant feature coordinate (1.0)",
+    "label": "int — binary class label (0 or 1)"
+  },
+  "records": [
+    {"record_id": "s1", "group_id": "g0", "x1": 0.0, "x2": 1.0, "label": 0},
+    {"record_id": "s2", "group_id": "g0", "x1": 1.0, "x2": 1.0, "label": 0},
+    {"record_id": "s3", "group_id": "g0", "x1": 2.0, "x2": 1.0, "label": 0},
+    {"record_id": "s4", "group_id": "g0", "x1": 3.0, "x2": 1.0, "label": 0},
+    {"record_id": "s5", "group_id": "g1", "x1": 4.0, "x2": 1.0, "label": 1},
+    {"record_id": "s6", "group_id": "g1", "x1": 5.0, "x2": 1.0, "label": 1},
+    {"record_id": "s7", "group_id": "g1", "x1": 6.0, "x2": 1.0, "label": 1},
+    {"record_id": "s8", "group_id": "g1", "x1": 7.0, "x2": 1.0, "label": 1}
+  ],
+  "split": {
+    "strategy": "fixed stratified group-aware",
+    "train_ids": ["s1", "s2", "s3", "s5", "s6", "s7"],
+    "test_ids": ["s4", "s8"]
+  },
+  "injected_error": {
+    "target_record_id": "s4",
+    "expected_value": 0,
+    "injected_predicted_value": 1,
+    "reason_category": "decision_boundary_proximity",
+    "note": "Deliberately flipped prediction on s4 (x1=3.0 adjacent to threshold x1=3.5) to test error reporting"
+  },
+  "data_contract": {
+    "source": "Fully synthetic — generated for error-analysis pipeline verification only",
+    "licence": "N/A",
+    "real_dataset_used": false,
+    "disclaimer": "These records are simulated. Results must not be cited as evidence of real-world or clinical performance."
+  }
+}
