@@ -1,0 +1,40 @@
+{
+  "task_id": "R33-T036",
+  "timestamp": "2026-11-22T20:19:30.009112+00:00",
+  "smoke_result": {
+    "model_type": "tiny_logistic_cpu",
+    "sample_count": 6,
+    "steps_executed": 6,
+    "epochs_executed": 1,
+    "final_loss": 0.9455649523588799,
+    "loss_history_length": 6,
+    "train_ids": [
+      "s1",
+      "s2",
+      "s3",
+      "s5",
+      "s6",
+      "s7"
+    ],
+    "test_ids": [
+      "s4",
+      "s8"
+    ],
+    "test_predictions": [
+      1,
+      1
+    ],
+    "test_probas": [
+      0.6128441215908795,
+      0.7712008291653419
+    ],
+    "naive_baseline_type": "naive_constant_baseline",
+    "naive_test_predictions": [
+      0,
+      0
+    ],
+    "status": "PASS"
+  },
+  "unit_test_exit_code": 0,
+  "data_disclaimer": "Synthetic fixture only \u2014 not evidence of real-world performance."
+}

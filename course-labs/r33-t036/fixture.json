@@ -1,0 +1,40 @@
+{
+  "description": "Synthetic fixture for R33-T036: Add a bounded CPU smoke run (sensitivity to axis orientation). Eight synthetic rows used as a pipeline smoke-test fixture. NOT observations from any real dataset.",
+  "schema": {
+    "record_id": "string — stable unique row identifier",
+    "group_id":  "string — group label (g0=class-0 group, g1=class-1 group)",
+    "x1":        "int    — first feature [0..7]",
+    "x2":        "int    — second feature (constant 1)",
+    "label":     "int    — binary class label (0 or 1)"
+  },
+  "records": [
+    {"record_id": "s1", "group_id": "g0", "x1": 0, "x2": 1, "label": 0},
+    {"record_id": "s2", "group_id": "g0", "x1": 1, "x2": 1, "label": 0},
+    {"record_id": "s3", "group_id": "g0", "x1": 2, "x2": 1, "label": 0},
+    {"record_id": "s4", "group_id": "g0", "x1": 3, "x2": 1, "label": 0},
+    {"record_id": "s5", "group_id": "g1", "x1": 4, "x2": 1, "label": 1},
+    {"record_id": "s6", "group_id": "g1", "x1": 5, "x2": 1, "label": 1},
+    {"record_id": "s7", "group_id": "g1", "x1": 6, "x2": 1, "label": 1},
+    {"record_id": "s8", "group_id": "g1", "x1": 7, "x2": 1, "label": 1}
+  ],
+  "split": {
+    "strategy": "fixed stratified (group-aware)",
+    "train_ids": ["s1", "s2", "s3", "s5", "s6", "s7"],
+    "test_ids":  ["s4", "s8"],
+    "note": "2 samples withheld (one per class) for interface correctness check only"
+  },
+  "smoke_test_constraints": {
+    "max_samples": 32,
+    "fixed_seed":  42,
+    "max_steps":   20,
+    "max_epochs":  1,
+    "device":      "CPU only",
+    "goal":        "Assert interface correctness, NOT useful accuracy"
+  },
+  "data_contract": {
+    "source":            "Fully synthetic — generated for pipeline smoke-test only",
+    "licence":           "N/A",
+    "real_dataset_used": false,
+    "disclaimer":        "These records are simulated. Results must not be cited as evidence of real-world or clinical performance."
+  }
+}

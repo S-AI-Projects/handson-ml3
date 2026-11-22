@@ -1,0 +1,27 @@
+test_deliberate_tampering_fails (test_pipeline.TestEndToEndPipeline.test_deliberate_tampering_fails)
+Changing expected prediction assertions must fail. ... ok
+test_smoke_pipeline_run_success (test_pipeline.TestEndToEndPipeline.test_smoke_pipeline_run_success)
+Full smoke pipeline completes with PASS status and finite outputs. ... ok
+test_loss_is_finite_and_recorded (test_pipeline.TestModelInterfaceCorrectness.test_loss_is_finite_and_recorded)
+All recorded training step losses must be finite numbers. ... ok
+test_naive_baseline_interface (test_pipeline.TestModelInterfaceCorrectness.test_naive_baseline_interface)
+Naive baseline is explicitly labelled and produces valid shapes. ... ok
+test_predict_before_fit_raises (test_pipeline.TestModelInterfaceCorrectness.test_predict_before_fit_raises)
+Unfitted model predict/predict_proba must raise RuntimeError. ... ok
+test_prediction_shapes_and_values (test_pipeline.TestModelInterfaceCorrectness.test_prediction_shapes_and_values)
+Prediction shapes match input size; values in binary domain {0, 1}. ... ok
+test_fixture_size_within_bound (test_pipeline.TestSmokePipelineBounds.test_fixture_size_within_bound)
+Fixture size must be <= 32 samples. ... ok
+test_model_step_and_epoch_bounds (test_pipeline.TestSmokePipelineBounds.test_model_step_and_epoch_bounds)
+Model fit must obey <= 20 steps and <= 1 epoch. ... ok
+test_sample_bound_rejection (test_pipeline.TestSmokePipelineBounds.test_sample_bound_rejection)
+Attempting to fit on > 32 samples must raise ValueError. ... ok
+test_step_bound_rejection (test_pipeline.TestSmokePipelineBounds.test_step_bound_rejection)
+Requesting > 20 steps must raise ValueError. ... ok
+test_stratified_split_preserves_classes_and_isolation (test_pipeline.TestSmokePipelineBounds.test_stratified_split_preserves_classes_and_isolation)
+Train and test splits must be disjoint and contain both classes. ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.000s
+
+OK
