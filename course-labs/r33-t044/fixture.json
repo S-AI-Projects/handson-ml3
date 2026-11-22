@@ -1,0 +1,44 @@
+{
+  "chain_spec": {
+    "states": [
+      0,
+      1,
+      2
+    ],
+    "initial_state": 0,
+    "terminal_state": 2,
+    "terminal_reward": 1.0,
+    "step_cap": 5
+  },
+  "metric_test_cases": {
+    "classification": {
+      "y_true": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "y_pred": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "expected_precision": 0.5,
+      "expected_recall": 0.5
+    },
+    "regression": {
+      "y_true": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "y_pred": [
+        1.0,
+        3.0,
+        2.0
+      ],
+      "expected_mae": 0.6666666666666666
+    }
+  }
+}
