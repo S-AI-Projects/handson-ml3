@@ -1,0 +1,29 @@
+test_csv_and_json_fixtures_match (test_pipeline.TestR33T031ImageContract.test_csv_and_json_fixtures_match)
+CSV fixture and JSON fixture must represent identical data records. ... ok
+test_deliberate_mutation_detection (test_pipeline.TestR33T031ImageContract.test_deliberate_mutation_detection)
+Deliberately mutating a diagonal image to non-diagonal must be caught by assertion. ... ok
+test_deterministic_stratified_split (test_pipeline.TestR33T031ImageContract.test_deterministic_stratified_split)
+Stratified split produces deterministic, disjoint partitions with balanced class labels. ... ok
+test_duplicate_record_id_fails (test_pipeline.TestR33T031ImageContract.test_duplicate_record_id_fails)
+Duplicate record_id must be detected and reported without silently overwriting. ... ok
+test_fixture_exact_count_and_composition (test_pipeline.TestR33T031ImageContract.test_fixture_exact_count_and_composition)
+The synthetic fixture must contain exactly 6 rows: 3 all-zero (label 0) and 3 diagonal (label 1). ... ok
+test_malformed_label_fails (test_pipeline.TestR33T031ImageContract.test_malformed_label_fails)
+Labels that are missing, non-numeric text, boolean, or out-of-range must fail. ... ok
+test_malformed_pixel_numeric_values_fail (test_pipeline.TestR33T031ImageContract.test_malformed_pixel_numeric_values_fail)
+Pixel values with non-numeric types, negatives, >255, or NaN must fail. ... ok
+test_malformed_tensor_shape_fails (test_pipeline.TestR33T031ImageContract.test_malformed_tensor_shape_fails)
+Tensors that are not 4x4 or have irregular rows must fail validation. ... ok
+test_missing_or_empty_group_id_fails (test_pipeline.TestR33T031ImageContract.test_missing_or_empty_group_id_fails)
+Records with missing or empty group_id must fail validation. ... ok
+test_missing_or_empty_record_id_fails (test_pipeline.TestR33T031ImageContract.test_missing_or_empty_record_id_fails)
+Records with missing or empty record_id must fail with descriptive reason. ... ok
+test_no_silent_dropping_of_invalid_records (test_pipeline.TestR33T031ImageContract.test_no_silent_dropping_of_invalid_records)
+Every rejected record must produce a specific ValidationError tracking record_id and field. ... ok
+test_valid_fixture_passes_validation (test_pipeline.TestR33T031ImageContract.test_valid_fixture_passes_validation)
+Valid synthetic fixture must pass with zero validation errors. ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
