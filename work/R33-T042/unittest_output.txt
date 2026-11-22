@@ -1,0 +1,12 @@
+test_deliberate_assignment_change_fails (test_pipeline.TestDeterministicSplitManifest.test_deliberate_assignment_change_fails) ... ok
+test_fixture_points_and_ids (test_pipeline.TestDeterministicSplitManifest.test_fixture_points_and_ids) ... ok
+test_nearest_centroid_assignments_match_specification (test_pipeline.TestDeterministicSplitManifest.test_nearest_centroid_assignments_match_specification) ... ok
+test_reject_overlapping_groups_when_strict (test_pipeline.TestDeterministicSplitManifest.test_reject_overlapping_groups_when_strict) ... ok
+test_reject_overlapping_record_ids (test_pipeline.TestDeterministicSplitManifest.test_reject_overlapping_record_ids) ... ok
+test_repeated_runs_produce_identical_manifest (test_pipeline.TestDeterministicSplitManifest.test_repeated_runs_produce_identical_manifest) ... ok
+test_split_sets_are_disjoint (test_pipeline.TestDeterministicSplitManifest.test_split_sets_are_disjoint) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
