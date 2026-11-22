@@ -1,0 +1,30 @@
+test_known_distance (test_pipeline.TestEuclidean.test_known_distance) ... ok
+test_zero_distance (test_pipeline.TestEuclidean.test_zero_distance) ... ok
+test_constant_feature_rejected (test_pipeline.TestMinMaxScaler.test_constant_feature_rejected)
+A column with zero range must raise ValueError. ... ok
+test_fit_on_empty_raises (test_pipeline.TestMinMaxScaler.test_fit_on_empty_raises) ... ok
+test_fit_stores_parameters (test_pipeline.TestMinMaxScaler.test_fit_stores_parameters) ... ok
+test_fit_transform_matches_separate_calls (test_pipeline.TestMinMaxScaler.test_fit_transform_matches_separate_calls) ... ok
+test_held_out_transform_uses_train_params (test_pipeline.TestMinMaxScaler.test_held_out_transform_uses_train_params) ... ok
+test_transform_before_fit_raises (test_pipeline.TestMinMaxScaler.test_transform_before_fit_raises)
+Calling transform() before fit() must raise RuntimeError. ... ok
+test_transform_scales_correctly (test_pipeline.TestMinMaxScaler.test_transform_scales_correctly) ... ok
+test_deliberate_wrong_answer_detected (test_pipeline.TestNearestCentroid.test_deliberate_wrong_answer_detected)
+Test fails if expected assignments are tampered with. ... ok
+test_empty_centroids_raises (test_pipeline.TestNearestCentroid.test_empty_centroids_raises) ... ok
+test_fixture_assignments (test_pipeline.TestNearestCentroid.test_fixture_assignments)
+Core fixture: 6 points, 2 centroids → [0,0,0,1,1,1]. ... ok
+test_single_centroid (test_pipeline.TestNearestCentroid.test_single_centroid)
+All points assigned to 0 when only one centroid. ... ok
+test_full_pipeline_on_fixture (test_pipeline.TestPipeline.test_full_pipeline_on_fixture)
+End-to-end: fixture rows → assignments == [0,0,0,1,1,1]. ... ok
+test_pipeline_record_ids_preserved (test_pipeline.TestPipeline.test_pipeline_record_ids_preserved) ... ok
+test_pipeline_scaled_values_in_range (test_pipeline.TestPipeline.test_pipeline_scaled_values_in_range)
+All scaled training values should be in [0, 1]. ... ok
+test_pipeline_scaler_is_fitted (test_pipeline.TestPipeline.test_pipeline_scaler_is_fitted) ... ok
+test_pipeline_shape (test_pipeline.TestPipeline.test_pipeline_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.000s
+
+OK
