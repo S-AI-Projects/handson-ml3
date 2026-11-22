@@ -1,0 +1,30 @@
+{
+  "task_id": "R33-T039",
+  "timestamp": "2026-11-22T20:35:18.733426+00:00",
+  "perturbation_result": {
+    "status": "PASS",
+    "vocabulary_size": 10,
+    "base_predictions": {
+      "t1": 1,
+      "t2": 1,
+      "t3": 0,
+      "t4": 0,
+      "t5": 1,
+      "t6": 0
+    },
+    "permuted_predictions": {
+      "t6": 0,
+      "t1": 1,
+      "t5": 1,
+      "t2": 1,
+      "t4": 0,
+      "t3": 0
+    },
+    "id_aligned_equivalent": true,
+    "unseen_token_fallback": "mapped_to_unk",
+    "unseen_record_prediction": 1,
+    "missing_field_rejection": "rejected_with_ValueError"
+  },
+  "unit_test_exit_code": 0,
+  "data_disclaimer": "Synthetic fixture only \u2014 not evidence of real-world performance."
+}
