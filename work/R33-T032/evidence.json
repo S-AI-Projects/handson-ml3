@@ -1,0 +1,123 @@
+{
+  "task": "R33-T032",
+  "student": "Snehakumari Vinod Singh",
+  "timestamp": "2026-11-22T18:50:45.660290+00:00",
+  "tool_versions": {
+    "python_version": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "datetime_utc": "2026-11-22T18:50:45.580734+00:00",
+    "git_version": "git version 2.55.0"
+  },
+  "test_results": [
+    {
+      "check": "fixture_record_count",
+      "input": "/Users/snehasingh/S&AI/handson-ml3/course-labs/r33-t032/fixture.json",
+      "expected": 8,
+      "actual": 8,
+      "status": "PASS"
+    },
+    {
+      "check": "fixture_x1_sequence",
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actual": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "fixture_x2_constant",
+      "expected": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "fixture_labels",
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "disjoint_split_partitions",
+      "expected": {
+        "overlaps": 0
+      },
+      "actual": {
+        "train_val_overlap": 0,
+        "train_test_overlap": 0,
+        "val_test_overlap": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "deterministic_manifest_regeneration",
+      "expected": "Exact match across repeated runs",
+      "actual": "Identical manifest produced",
+      "status": "PASS"
+    },
+    {
+      "check": "chronological_split_monotonicity",
+      "expected": "Zero temporal lookahead violations",
+      "actual": "Train <= Validation <= Test monotonic ordering verified",
+      "status": "PASS"
+    }
+  ],
+  "manifest_summary": {
+    "train_count": 4,
+    "validation_count": 2,
+    "test_count": 2,
+    "total_records": 8
+  },
+  "overall_status": "ALL_CHECKS_PASSED"
+}
