@@ -1,0 +1,38 @@
+[
+  {
+    "record_id": "p1",
+    "x": 0.0,
+    "y": 0.0,
+    "group_id": "cluster_0"
+  },
+  {
+    "record_id": "p2",
+    "x": 0.0,
+    "y": 1.0,
+    "group_id": "cluster_0"
+  },
+  {
+    "record_id": "p3",
+    "x": 1.0,
+    "y": 0.0,
+    "group_id": "cluster_0"
+  },
+  {
+    "record_id": "p4",
+    "x": 5.0,
+    "y": 5.0,
+    "group_id": "cluster_1"
+  },
+  {
+    "record_id": "p5",
+    "x": 5.0,
+    "y": 6.0,
+    "group_id": "cluster_1"
+  },
+  {
+    "record_id": "p6",
+    "x": 6.0,
+    "y": 5.0,
+    "group_id": "cluster_1"
+  }
+]
