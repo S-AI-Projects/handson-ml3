@@ -1,0 +1,10 @@
+{
+  "student": "SHAKTI KUMAR SINGH",
+  "task_id": "R33-T050",
+  "issue_number": 50,
+  "target_item": "13_loading_and_preprocessing_data.ipynb",
+  "test_returncode": 0,
+  "tests_passed": true,
+  "automated_check_cmd": "python3 -m unittest discover -s course-labs/r33-t050 -p \"test_*.py\" -v",
+  "verified": true
+}

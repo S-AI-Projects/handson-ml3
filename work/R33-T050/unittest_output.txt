@@ -1,0 +1,9 @@
+test_bounds_exceeded_error (test_pipeline.TestBoundedImagePipelineSmoke.test_bounds_exceeded_error) ... ok
+test_deterministic_reproducibility (test_pipeline.TestBoundedImagePipelineSmoke.test_deterministic_reproducibility) ... ok
+test_prediction_shape (test_pipeline.TestBoundedImagePipelineSmoke.test_prediction_shape) ... ok
+test_smoke_epoch_bounded_and_finite_loss (test_pipeline.TestBoundedImagePipelineSmoke.test_smoke_epoch_bounded_and_finite_loss) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
