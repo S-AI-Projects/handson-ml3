@@ -1,0 +1,23 @@
+test_mismatched_prediction_count_raises_value_error (test_pipeline.TestErrorAnalysisFailureAndRejectionCases.test_mismatched_prediction_count_raises_value_error)
+Mismatched prediction dictionary size must raise ValueError. ... ok
+test_tampered_error_report_detection (test_pipeline.TestErrorAnalysisFailureAndRejectionCases.test_tampered_error_report_detection)
+Deliberately changing expected error record ID must trigger test failure. ... ok
+test_unfitted_model_raises_runtime_error (test_pipeline.TestErrorAnalysisFailureAndRejectionCases.test_unfitted_model_raises_runtime_error)
+Calling predict before fit must raise RuntimeError. ... ok
+test_fixture_integrity (test_pipeline.TestErrorAnalysisFixtureAndModel.test_fixture_integrity)
+Eight synthetic rows with x1=[0..7], x2=1, and label=[0,0,0,0,1,1,1,1]. ... ok
+test_stratified_split_integrity (test_pipeline.TestErrorAnalysisFixtureAndModel.test_stratified_split_integrity)
+Train and test splits preserve group isolation and class balance. ... ok
+test_aggregate_error_counts_match_detailed_rows (test_pipeline.TestErrorReportCorrectness.test_aggregate_error_counts_match_detailed_rows)
+total_errors in report must strictly equal len(error_rows). ... ok
+test_clean_model_has_zero_errors (test_pipeline.TestErrorReportCorrectness.test_clean_model_has_zero_errors)
+Clean fitted weak learner on fixture produces 0 errors. ... ok
+test_correct_predictions_do_not_appear_in_report (test_pipeline.TestErrorReportCorrectness.test_correct_predictions_do_not_appear_in_report)
+Correctly classified records MUST NOT appear in error_rows. ... ok
+test_injected_error_appears_in_report (test_pipeline.TestErrorReportCorrectness.test_injected_error_appears_in_report)
+Injected wrong prediction for s4 appears with correct record ID and reason. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK
