@@ -1,0 +1,58 @@
+{
+  "description": "Synthetic image fixture for R33-T040: Define a saved-pipeline interface (Classification and Localization). Six 4x4 grayscale images used as a pipeline verification fixture. NOT observations from any real dataset.",
+  "schema": {
+    "record_id": "string — unique record identifier (img1..img6)",
+    "group_id": "string — group identifier (g0=all_zero, g1=white_diagonal)",
+    "pixels": "list of 16 ints [0..255] representing a flattened 4x4 grayscale image",
+    "label": "int — binary class label (0=all-zero, 1=white-diagonal)"
+  },
+  "records": [
+    {
+      "record_id": "img1",
+      "group_id": "g0",
+      "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "label": 0
+    },
+    {
+      "record_id": "img2",
+      "group_id": "g0",
+      "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "label": 0
+    },
+    {
+      "record_id": "img3",
+      "group_id": "g0",
+      "pixels": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "label": 0
+    },
+    {
+      "record_id": "img4",
+      "group_id": "g1",
+      "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255],
+      "label": 1
+    },
+    {
+      "record_id": "img5",
+      "group_id": "g1",
+      "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255],
+      "label": 1
+    },
+    {
+      "record_id": "img6",
+      "group_id": "g1",
+      "pixels": [255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255, 0, 0, 0, 0, 255],
+      "label": 1
+    }
+  ],
+  "split": {
+    "strategy": "fixed stratified group-aware",
+    "train_ids": ["img1", "img2", "img4", "img5"],
+    "test_ids": ["img3", "img6"]
+  },
+  "data_contract": {
+    "source": "Fully synthetic — generated for saved-pipeline interface verification only",
+    "licence": "N/A",
+    "real_dataset_used": false,
+    "disclaimer": "These records are simulated. Results must not be cited as evidence of real-world or clinical performance."
+  }
+}

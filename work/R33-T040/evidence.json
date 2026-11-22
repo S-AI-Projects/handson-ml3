@@ -1,0 +1,89 @@
+{
+  "task_id": "R33-T040",
+  "timestamp": "2026-11-22T20:40:17.950671+00:00",
+  "roundtrip_result": {
+    "status": "PASS",
+    "schema_version": "1.0.0",
+    "agreement_tolerance": 1e-06,
+    "predictions_before": {
+      "img1": {
+        "record_id": "img1",
+        "probability": 0.119203,
+        "predicted_label": 0,
+        "threshold": 0.5
+      },
+      "img2": {
+        "record_id": "img2",
+        "probability": 0.119203,
+        "predicted_label": 0,
+        "threshold": 0.5
+      },
+      "img3": {
+        "record_id": "img3",
+        "probability": 0.119203,
+        "predicted_label": 0,
+        "threshold": 0.5
+      },
+      "img4": {
+        "record_id": "img4",
+        "probability": 0.880797,
+        "predicted_label": 1,
+        "threshold": 0.5
+      },
+      "img5": {
+        "record_id": "img5",
+        "probability": 0.880797,
+        "predicted_label": 1,
+        "threshold": 0.5
+      },
+      "img6": {
+        "record_id": "img6",
+        "probability": 0.880797,
+        "predicted_label": 1,
+        "threshold": 0.5
+      }
+    },
+    "predictions_after": {
+      "img1": {
+        "record_id": "img1",
+        "probability": 0.119203,
+        "predicted_label": 0,
+        "threshold": 0.5
+      },
+      "img2": {
+        "record_id": "img2",
+        "probability": 0.119203,
+        "predicted_label": 0,
+        "threshold": 0.5
+      },
+      "img3": {
+        "record_id": "img3",
+        "probability": 0.119203,
+        "predicted_label": 0,
+        "threshold": 0.5
+      },
+      "img4": {
+        "record_id": "img4",
+        "probability": 0.880797,
+        "predicted_label": 1,
+        "threshold": 0.5
+      },
+      "img5": {
+        "record_id": "img5",
+        "probability": 0.880797,
+        "predicted_label": 1,
+        "threshold": 0.5
+      },
+      "img6": {
+        "record_id": "img6",
+        "probability": 0.880797,
+        "predicted_label": 1,
+        "threshold": 0.5
+      }
+    },
+    "requires_training_data_at_inference": false,
+    "requires_credentials": false
+  },
+  "unit_test_exit_code": 0,
+  "data_disclaimer": "Synthetic fixture only \u2014 not evidence of real-world performance."
+}

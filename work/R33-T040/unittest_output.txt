@@ -1,0 +1,23 @@
+test_tampered_prediction_detected (test_pipeline.TestDeliberateTampering.test_tampered_prediction_detected)
+Deliberately changing expected class label must trigger assertion failure. ... ok
+test_fixture_structure (test_pipeline.TestImageFixtureIntegrity.test_fixture_structure)
+Six synthetic 4x4 grayscale images: 3 all-zero labelled 0, 3 white-diagonal labelled 1. ... ok
+test_roundtrip_function (test_pipeline.TestSaveReloadAndPredictionAgreement.test_roundtrip_function)
+Pipeline roundtrip runner completes with PASS status. ... ok
+test_save_reload_file_roundtrip (test_pipeline.TestSaveReloadAndPredictionAgreement.test_save_reload_file_roundtrip)
+Save to JSON file and reload, verifying prediction agreement within 1e-6. ... ok
+test_reject_missing_fields (test_pipeline.TestSchemaValidationAndRejection.test_reject_missing_fields)
+Missing record_id or pixels must raise ValueError. ... ok
+test_reject_pixel_out_of_range (test_pipeline.TestSchemaValidationAndRejection.test_reject_pixel_out_of_range)
+Pixel values < 0 or > 255 must raise ValueError. ... ok
+test_reject_schema_version_mismatch (test_pipeline.TestSchemaValidationAndRejection.test_reject_schema_version_mismatch)
+Loading a serialized model with wrong schema version must fail. ... ok
+test_reject_unknown_serialized_keys (test_pipeline.TestSchemaValidationAndRejection.test_reject_unknown_serialized_keys)
+Loading serialized data with unknown keys must fail. ... ok
+test_reject_wrong_pixel_length (test_pipeline.TestSchemaValidationAndRejection.test_reject_wrong_pixel_length)
+Images with != 16 pixels must raise ValueError. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK
