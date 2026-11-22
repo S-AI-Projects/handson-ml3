@@ -1,0 +1,23 @@
+test_always_right_policy_baseline (test_pipeline.TestR33T033ReinforcementBaseline.test_always_right_policy_baseline)
+AlwaysRightPolicy achieves 100% success rate and mean reward 1.0 in 2 steps. ... ok
+test_csv_matches_json_fixture (test_pipeline.TestR33T033ReinforcementBaseline.test_csv_matches_json_fixture)
+CSV and JSON fixtures must represent the identical transition records. ... ok
+test_deliberate_mutation_detection (test_pipeline.TestR33T033ReinforcementBaseline.test_deliberate_mutation_detection)
+Deliberately mutating the terminal reward from 1.0 to 0.0 triggers an assertion failure. ... ok
+test_five_left_actions_hit_step_cap_with_reward_0 (test_pipeline.TestR33T033ReinforcementBaseline.test_five_left_actions_hit_step_cap_with_reward_0)
+Five left actions must stay clamped at 0, hit step cap 5, and yield total reward 0.0. ... ok
+test_fixture_records_schema_validation (test_pipeline.TestR33T033ReinforcementBaseline.test_fixture_records_schema_validation)
+The synthetic transition fixture must pass schema validation with 0 errors. ... ok
+test_policy_comparisons (test_pipeline.TestR33T033ReinforcementBaseline.test_policy_comparisons)
+AlwaysLeftPolicy fails to reach terminal state; AlwaysRightPolicy strictly outperforms it. ... ok
+test_right_right_trajectory_reaches_terminal_with_reward_1 (test_pipeline.TestR33T033ReinforcementBaseline.test_right_right_trajectory_reaches_terminal_with_reward_1)
+[right, right] trajectory must reach terminal state 2 with total reward 1.0. ... ok
+test_schema_validator_rejects_inconsistent_physics (test_pipeline.TestR33T033ReinforcementBaseline.test_schema_validator_rejects_inconsistent_physics)
+Inconsistent next_state or invalid actions must be rejected with descriptive error. ... ok
+test_single_step_mechanics (test_pipeline.TestR33T033ReinforcementBaseline.test_single_step_mechanics)
+Verify individual step advances, floor boundary, and terminal clamping. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

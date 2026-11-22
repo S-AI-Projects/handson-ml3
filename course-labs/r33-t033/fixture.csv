@@ -1,0 +1,11 @@
+episode_id,state,action,next_state,reward,terminated
+ep_right,0,right,1,0.0,False
+ep_right,1,right,2,1.0,True
+ep_left,0,left,0,0.0,False
+ep_left,0,left,0,0.0,False
+ep_left,0,left,0,0.0,False
+ep_left,0,left,0,0.0,False
+ep_left,0,left,0,0.0,True
+ep_eval,0,left,0,0.0,False
+ep_eval,0,right,1,0.0,False
+ep_eval,1,right,2,1.0,True
