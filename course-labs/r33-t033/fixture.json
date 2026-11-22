@@ -1,0 +1,82 @@
+[
+  {
+    "episode_id": "ep_right",
+    "state": 0,
+    "action": "right",
+    "next_state": 1,
+    "reward": 0.0,
+    "terminated": false
+  },
+  {
+    "episode_id": "ep_right",
+    "state": 1,
+    "action": "right",
+    "next_state": 2,
+    "reward": 1.0,
+    "terminated": true
+  },
+  {
+    "episode_id": "ep_left",
+    "state": 0,
+    "action": "left",
+    "next_state": 0,
+    "reward": 0.0,
+    "terminated": false
+  },
+  {
+    "episode_id": "ep_left",
+    "state": 0,
+    "action": "left",
+    "next_state": 0,
+    "reward": 0.0,
+    "terminated": false
+  },
+  {
+    "episode_id": "ep_left",
+    "state": 0,
+    "action": "left",
+    "next_state": 0,
+    "reward": 0.0,
+    "terminated": false
+  },
+  {
+    "episode_id": "ep_left",
+    "state": 0,
+    "action": "left",
+    "next_state": 0,
+    "reward": 0.0,
+    "terminated": false
+  },
+  {
+    "episode_id": "ep_left",
+    "state": 0,
+    "action": "left",
+    "next_state": 0,
+    "reward": 0.0,
+    "terminated": true
+  },
+  {
+    "episode_id": "ep_eval",
+    "state": 0,
+    "action": "left",
+    "next_state": 0,
+    "reward": 0.0,
+    "terminated": false
+  },
+  {
+    "episode_id": "ep_eval",
+    "state": 0,
+    "action": "right",
+    "next_state": 1,
+    "reward": 0.0,
+    "terminated": false
+  },
+  {
+    "episode_id": "ep_eval",
+    "state": 1,
+    "action": "right",
+    "next_state": 2,
+    "reward": 1.0,
+    "terminated": true
+  }
+]
