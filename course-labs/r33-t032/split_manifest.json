@@ -1,0 +1,32 @@
+{
+  "splits": {
+    "train": [
+      "rec_001",
+      "rec_002",
+      "rec_005",
+      "rec_006"
+    ],
+    "validation": [
+      "rec_003",
+      "rec_007"
+    ],
+    "test": [
+      "rec_004",
+      "rec_008"
+    ]
+  },
+  "summary": {
+    "train_count": 4,
+    "validation_count": 2,
+    "test_count": 2,
+    "total_records": 8
+  },
+  "metadata": {
+    "split_type": "stratified",
+    "seed": 42,
+    "train_ratio": 0.5,
+    "val_ratio": 0.25,
+    "test_ratio": 0.25,
+    "dataset_size": 8
+  }
+}

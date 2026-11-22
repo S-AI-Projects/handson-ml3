@@ -1,0 +1,9 @@
+record_id,group_id,x1,x2,label,timestamp
+rec_001,grp_001,0,1,0,100
+rec_002,grp_001,1,1,0,101
+rec_003,grp_002,2,1,0,102
+rec_004,grp_002,3,1,0,103
+rec_005,grp_003,4,1,1,104
+rec_006,grp_003,5,1,1,105
+rec_007,grp_004,6,1,1,106
+rec_008,grp_004,7,1,1,107

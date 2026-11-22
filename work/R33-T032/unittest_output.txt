@@ -1,0 +1,25 @@
+test_chronological_time_series_split_is_monotonic (test_pipeline.TestR33T032SplitLeakage.test_chronological_time_series_split_is_monotonic)
+Time-series split must be strictly chronological without forward lookahead leakage. ... ok
+test_clean_fixture_schema_validation (test_pipeline.TestR33T032SplitLeakage.test_clean_fixture_schema_validation)
+Valid fixture passes schema validation with 0 errors. ... ok
+test_csv_matches_json_fixture (test_pipeline.TestR33T032SplitLeakage.test_csv_matches_json_fixture)
+CSV and JSON fixtures must represent the identical dataset. ... ok
+test_deliberate_mutation_detection (test_pipeline.TestR33T032SplitLeakage.test_deliberate_mutation_detection)
+Mutating expected split count or modifying record IDs triggers assertion failure. ... ok
+test_fixture_exact_count_and_values (test_pipeline.TestR33T032SplitLeakage.test_fixture_exact_count_and_values)
+Fixture must contain exactly 8 synthetic rows with specified x1, x2, and label. ... ok
+test_manifest_partitions_are_disjoint (test_pipeline.TestR33T032SplitLeakage.test_manifest_partitions_are_disjoint)
+Train, validation, and test sets must be strictly mutually disjoint. ... ok
+test_rejects_group_leakage (test_pipeline.TestR33T032SplitLeakage.test_rejects_group_leakage)
+When group isolation is required, sharing a group across partitions must fail. ... ok
+test_rejects_overlapping_record_ids (test_pipeline.TestR33T032SplitLeakage.test_rejects_overlapping_record_ids)
+Intentionally overlapping IDs between partitions must be rejected by validator. ... ok
+test_repeated_runs_produce_identical_manifest (test_pipeline.TestR33T032SplitLeakage.test_repeated_runs_produce_identical_manifest)
+Repeated generation calls must produce byte-for-byte identical manifests. ... ok
+test_stratified_split_preserves_class_balance (test_pipeline.TestR33T032SplitLeakage.test_stratified_split_preserves_class_balance)
+Each partition must preserve balanced representation of classes 0 and 1. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
