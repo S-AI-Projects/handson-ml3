@@ -1,0 +1,15 @@
+test_deliberate_change_detected (test_pipeline.TestTimeSeriesDataContract.test_deliberate_change_detected) ... ok
+test_duplicate_record_id_fails (test_pipeline.TestTimeSeriesDataContract.test_duplicate_record_id_fails) ... ok
+test_fixture_values_and_ids (test_pipeline.TestTimeSeriesDataContract.test_fixture_values_and_ids) ... ok
+test_malformed_numeric_nan_fails (test_pipeline.TestTimeSeriesDataContract.test_malformed_numeric_nan_fails) ... ok
+test_malformed_numeric_string_fails (test_pipeline.TestTimeSeriesDataContract.test_malformed_numeric_string_fails) ... ok
+test_malformed_timestamp_fails (test_pipeline.TestTimeSeriesDataContract.test_malformed_timestamp_fails) ... ok
+test_missing_record_id_fails (test_pipeline.TestTimeSeriesDataContract.test_missing_record_id_fails) ... ok
+test_partition_splits_no_shuffling (test_pipeline.TestTimeSeriesDataContract.test_partition_splits_no_shuffling) ... ok
+test_tensor_list_value_fails (test_pipeline.TestTimeSeriesDataContract.test_tensor_list_value_fails) ... ok
+test_valid_fixture_passes (test_pipeline.TestTimeSeriesDataContract.test_valid_fixture_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK
