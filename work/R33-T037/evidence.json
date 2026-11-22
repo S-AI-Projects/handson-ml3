@@ -1,0 +1,159 @@
+{
+  "task_id": "R33-T037",
+  "timestamp": "2026-11-22T20:25:09.034366+00:00",
+  "serialized_configuration": {
+    "schema_version": "1.0.0",
+    "seed": 42,
+    "feature_ordering": [
+      "value"
+    ],
+    "split_ids": {
+      "train": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "validation": [
+        "d7",
+        "d8"
+      ],
+      "test": [
+        "d9",
+        "d10"
+      ]
+    },
+    "algorithm_settings": {
+      "model_type": "autoregressive_lag",
+      "lag": 1,
+      "clip_min": 0.0,
+      "clip_max": 100.0,
+      "learning_rate": 0.01
+    }
+  },
+  "original_run": {
+    "config": {
+      "schema_version": "1.0.0",
+      "seed": 42,
+      "feature_ordering": [
+        "value"
+      ],
+      "split_ids": {
+        "train": [
+          "d1",
+          "d2",
+          "d3",
+          "d4",
+          "d5",
+          "d6"
+        ],
+        "validation": [
+          "d7",
+          "d8"
+        ],
+        "test": [
+          "d9",
+          "d10"
+        ]
+      },
+      "algorithm_settings": {
+        "model_type": "autoregressive_lag",
+        "lag": 1,
+        "clip_min": 0.0,
+        "clip_max": 100.0,
+        "learning_rate": 0.01
+      }
+    },
+    "train_ids": [
+      "d1",
+      "d2",
+      "d3",
+      "d4",
+      "d5",
+      "d6"
+    ],
+    "val_ids": [
+      "d7",
+      "d8"
+    ],
+    "test_ids": [
+      "d9",
+      "d10"
+    ],
+    "val_predictions": [
+      13.8514,
+      14.7973
+    ],
+    "test_predictions": [
+      15.7432,
+      15.2703
+    ],
+    "fitted_weight": 0.473,
+    "fitted_bias": 7.2297
+  },
+  "reloaded_run": {
+    "config": {
+      "schema_version": "1.0.0",
+      "seed": 42,
+      "feature_ordering": [
+        "value"
+      ],
+      "split_ids": {
+        "train": [
+          "d1",
+          "d2",
+          "d3",
+          "d4",
+          "d5",
+          "d6"
+        ],
+        "validation": [
+          "d7",
+          "d8"
+        ],
+        "test": [
+          "d9",
+          "d10"
+        ]
+      },
+      "algorithm_settings": {
+        "model_type": "autoregressive_lag",
+        "lag": 1,
+        "clip_min": 0.0,
+        "clip_max": 100.0,
+        "learning_rate": 0.01
+      }
+    },
+    "train_ids": [
+      "d1",
+      "d2",
+      "d3",
+      "d4",
+      "d5",
+      "d6"
+    ],
+    "val_ids": [
+      "d7",
+      "d8"
+    ],
+    "test_ids": [
+      "d9",
+      "d10"
+    ],
+    "val_predictions": [
+      13.8514,
+      14.7973
+    ],
+    "test_predictions": [
+      15.7432,
+      15.2703
+    ],
+    "fitted_weight": 0.473,
+    "fitted_bias": 7.2297
+  },
+  "identical_predictions": true,
+  "unit_test_exit_code": 0,
+  "data_disclaimer": "Synthetic fixture only \u2014 not evidence of real-world performance."
+}

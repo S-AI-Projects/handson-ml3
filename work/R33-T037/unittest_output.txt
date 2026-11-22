@@ -1,0 +1,31 @@
+test_reject_contradictory_clip_bounds (test_pipeline.TestConfigurationRejectionOfUnknownAndContradictorySettings.test_reject_contradictory_clip_bounds)
+clip_min >= clip_max must raise ValueError. ... ok
+test_reject_contradictory_split_overlap (test_pipeline.TestConfigurationRejectionOfUnknownAndContradictorySettings.test_reject_contradictory_split_overlap)
+Overlapping split IDs (train and val) must raise ValueError. ... ok
+test_reject_excessive_lag (test_pipeline.TestConfigurationRejectionOfUnknownAndContradictorySettings.test_reject_excessive_lag)
+Lag >= training set size must raise ValueError. ... ok
+test_reject_invalid_schema_version (test_pipeline.TestConfigurationRejectionOfUnknownAndContradictorySettings.test_reject_invalid_schema_version)
+Unrecognized schema version must raise ValueError. ... ok
+test_reject_unknown_algorithm_field (test_pipeline.TestConfigurationRejectionOfUnknownAndContradictorySettings.test_reject_unknown_algorithm_field)
+Unknown field inside algorithm_settings must raise ValueError. ... ok
+test_reject_unknown_top_level_field (test_pipeline.TestConfigurationRejectionOfUnknownAndContradictorySettings.test_reject_unknown_top_level_field)
+Unknown top-level field in dict must raise ValueError. ... ok
+test_fixture_integrity (test_pipeline.TestConfigurationSerializationAndReproducibility.test_fixture_integrity)
+Verify fixture values [10,12,11,13,15,14,16,18,17,19] and IDs d1..d10. ... ok
+test_reloaded_config_reconstructs_identical_predictions (test_pipeline.TestConfigurationSerializationAndReproducibility.test_reloaded_config_reconstructs_identical_predictions)
+Reloaded JSON configuration produces bit-for-bit identical predictions. ... ok
+test_split_sizes_and_ordering (test_pipeline.TestConfigurationSerializationAndReproducibility.test_split_sizes_and_ordering)
+First 6 train, next 2 validation, final 2 test; no shuffling. ... ok
+test_tampered_predictions_fail (test_pipeline.TestDeliberateTampering.test_tampered_predictions_fail)
+Assert that tampered predictions do not match expected model predictions. ... ok
+test_reject_missing_feature (test_pipeline.TestInputShapeValidation.test_reject_missing_feature)
+Input data missing configured feature must raise ValueError. ... ok
+test_reject_missing_record_id (test_pipeline.TestInputShapeValidation.test_reject_missing_record_id)
+Input record without record_id must raise ValueError. ... ok
+test_reject_non_numeric_feature (test_pipeline.TestInputShapeValidation.test_reject_non_numeric_feature)
+Input with non-numeric feature must raise ValueError. ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.000s
+
+OK
