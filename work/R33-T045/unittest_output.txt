@@ -1,0 +1,12 @@
+test_diagonal_image_values (test_pipeline.TestImagePreprocessingContract.test_diagonal_image_values) ... ok
+test_rejects_invalid_dimensions (test_pipeline.TestImagePreprocessingContract.test_rejects_invalid_dimensions) ... ok
+test_rejects_nan_and_inf (test_pipeline.TestImagePreprocessingContract.test_rejects_nan_and_inf) ... ok
+test_rejects_out_of_range_pixels (test_pipeline.TestImagePreprocessingContract.test_rejects_out_of_range_pixels) ... ok
+test_stateless_no_contamination (test_pipeline.TestImagePreprocessingContract.test_stateless_no_contamination) ... ok
+test_valid_image_scaling_and_channel_axis (test_pipeline.TestImagePreprocessingContract.test_valid_image_scaling_and_channel_axis) ... ok
+test_zero_image_all_zeros (test_pipeline.TestImagePreprocessingContract.test_zero_image_all_zeros) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
