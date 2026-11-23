@@ -1,0 +1,9 @@
+{
+  "task_id": "R33-T021",
+  "issue_number": 21,
+  "target_item": "11_training_deep_neural_networks.ipynb",
+  "test_returncode": 0,
+  "tests_passed": true,
+  "automated_check_cmd": "python3 -m unittest discover -s course-labs/r33-t021 -p \"test_*.py\" -v",
+  "verified": true
+}
