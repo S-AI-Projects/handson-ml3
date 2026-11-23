@@ -1,0 +1,58 @@
+[
+  {
+    "record_id": "row_0",
+    "group_id": "grp_0",
+    "x1": 0.0,
+    "x2": 1.0,
+    "label": 0
+  },
+  {
+    "record_id": "row_1",
+    "group_id": "grp_1",
+    "x1": 1.0,
+    "x2": 1.0,
+    "label": 0
+  },
+  {
+    "record_id": "row_2",
+    "group_id": "grp_0",
+    "x1": 2.0,
+    "x2": 1.0,
+    "label": 0
+  },
+  {
+    "record_id": "row_3",
+    "group_id": "grp_1",
+    "x1": 3.0,
+    "x2": 1.0,
+    "label": 0
+  },
+  {
+    "record_id": "row_4",
+    "group_id": "grp_0",
+    "x1": 4.0,
+    "x2": 1.0,
+    "label": 1
+  },
+  {
+    "record_id": "row_5",
+    "group_id": "grp_1",
+    "x1": 5.0,
+    "x2": 1.0,
+    "label": 1
+  },
+  {
+    "record_id": "row_6",
+    "group_id": "grp_0",
+    "x1": 6.0,
+    "x2": 1.0,
+    "label": 1
+  },
+  {
+    "record_id": "row_7",
+    "group_id": "grp_1",
+    "x1": 7.0,
+    "x2": 1.0,
+    "label": 1
+  }
+]
