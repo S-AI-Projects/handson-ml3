@@ -1,0 +1,6 @@
+{
+  "classification_precision": 0.5,
+  "classification_recall": 0.5,
+  "regression_mae": 0.6666666666666666,
+  "status": "pass"
+}
