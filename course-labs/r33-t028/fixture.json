@@ -1,0 +1,44 @@
+[
+  {
+    "record_id": "r1",
+    "split": "train",
+    "x1": 0.0,
+    "x2": 1.0,
+    "target": 1.0
+  },
+  {
+    "record_id": "r2",
+    "split": "train",
+    "x1": 1.0,
+    "x2": 1.0,
+    "target": 3.0
+  },
+  {
+    "record_id": "r3",
+    "split": "train",
+    "x1": 2.0,
+    "x2": 1.0,
+    "target": 5.0
+  },
+  {
+    "record_id": "r4",
+    "split": "train",
+    "x1": 3.0,
+    "x2": 1.0,
+    "target": 7.0
+  },
+  {
+    "record_id": "r5",
+    "split": "val",
+    "x1": 4.0,
+    "x2": 1.0,
+    "target": 9.0
+  },
+  {
+    "record_id": "r6",
+    "split": "test",
+    "x1": 5.0,
+    "x2": 1.0,
+    "target": 11.0
+  }
+]
